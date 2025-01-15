@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<title>SIGN IN</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/signin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Include SweetAlert2 CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -15,41 +19,38 @@
 </head>
 
 <body>
-    <div class="heading-nav_bar">
-        <header class="nav_bar">
-            <div class="search">
-                <input type="text" placeholder="Search">
-            </div>
-            <nav>
-                <ul>
-                    <li><a id="Sign" href="#signin">Sign in</a></li>
-                    <li><a id="Log" href="#login">Log in</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
 
+    <div class="login-container">
+        <!-- Logo Section -->
+        <img src="/images/logo.jpg" alt="SVM MUSIC Logo" class="logo">
 
+        <h2>Sign up to SVM MUSIC</h2>
 
-    <div class="sidebar">
-        <div class="sidebar_logo">
-            <img src="photos/photo_2025-01-13_09-29-09.jpg" alt="Music Logo">
+        <!-- Social Sign-Up Buttons -->
+        <div class="g-signin2" data-onsuccess="onSignUp"></div>
+
+        <button class="button">
+            <img src="/images/facebook.png" alt="Facebook" class="icon"> Continue with Facebook
+        </button>
+        <button class="button">
+            <img src="/images/apple.png" alt="Apple" class="icon"> Continue with Apple
+        </button>
+
+        <div class="divider">
+            <div></div>
+            <span>Or</span>
+            <div></div>
         </div>
-        <ul class="sidebar_menu">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">LIBRARY</a></li>
-            <li><a href="#">ARTIST</a></li>
-            <li><a href="#">HELP</a></li>
-            <li><a href="#">SETTINGS</a></li>
-        </ul>
-        <div class="sidebar_button">
-            LOGOUT
-            <span class="material-symbols-outlined">
-                logout
-                </span>
-        </div>
-    </div>
 
+        <!-- Sign-Up Form -->
+        <input type="text" id="name" class="input-field" placeholder="Full Name" required>
+        <input type="email" id="email" class="input-field" placeholder="Email" required>
+        <input type="password" id="password" class="input-field" placeholder="Password" required>
+        <input type="password" id="confirm-password" class="input-field" placeholder="Confirm Password" required>
+
+        <button class="button colorbtn" onclick="signUp()">Sign Up</button>
+    </div>
+    <script src="/js/signin.js"></script>
 </body>
 
 </html>

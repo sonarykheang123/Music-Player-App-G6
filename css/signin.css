@@ -1,0 +1,179 @@
+     /* General Reset */
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+        background-color: #121212;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
+    }
+
+    /* Container Styling */
+    .login-container {
+        width: 320px;
+        /* Reduced from 400px */
+        padding: 20px;
+        /* Reduced from 30px */
+        background: #222;
+        border-radius: 15px;
+        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        animation: slideIn 0.6s ease-out;
+    }
+
+    /* Logo Styling */
+    .logo {
+        width: 100px;
+        /* Reduced from 120px */
+        margin-bottom: 15px;
+        /* Reduced from 20px */
+        border-radius: 50%;
+        transition: transform 0.3s;
+    }
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+    /* Heading Styling */
+    h2 {
+        font-size: 20px;
+        /* Reduced from 24px */
+        margin-bottom: 15px;
+        /* Reduced from 20px */
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    /* Button Styling */
+    .button {
+        background-color: #444;
+        color: white;
+        border: none;
+        padding: 12px;
+        /* Reduced from 14px */
+        margin: 8px 0;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s, transform 0.3s;
+        font-size: 14px;
+        /* Reduced from 16px */
+    }
+
+    .button:hover {
+        background-color: #666;
+        transform: translateY(-3px);
+    }
+
+    .colorbtn {
+        background: rgb(101, 156, 228);
+    }
+
+    .colorbtn:hover {
+        background: rgb(70, 130, 180);
+    }
+
+    /* Icon Styling */
+    .icon {
+        margin-right: 12px;
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Input Fields */
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        /* Reduced from 12px */
+        margin: 8px 0;
+        border: 1px solid #444;
+        border-radius: 5px;
+        background-color: #333;
+        color: white;
+        font-size: 14px;
+        /* Reduced from 16px */
+        transition: border-color 0.3s;
+    }
+
+    .input-field:focus {
+        border-color: rgb(101, 156, 228);
+        outline: none;
+    }
+
+    /* Divider Styling */
+    .divider {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .divider div {
+        flex: 1;
+        height: 1px;
+        background: #444;
+    }
+
+    .divider span {
+        margin: 0 10px;
+        color: #aaa;
+    }
+
+    /* Animation */
+    @keyframes slideIn {
+        0% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 480px) {
+        .login-container {
+            width: 85%;
+            /* Reduced from 90% */
+            padding: 15px;
+            /* Reduced from 20px */
+        }
+
+        h2 {
+            font-size: 18px;
+            /* Reduced from 20px */
+        }
+
+        .button,
+        .input-field {
+            font-size: 13px;
+            /* Adjusted for smaller screens */
+        }
+    }
+
+    /* Custom style for smaller SweetAlert */
+    .small-alert {
+        max-width: 300px;
+        /* Adjust width */
+        font-size: 0.9rem;
+        /* Adjust text size */
+        padding: 1rem;
+        /* Adjust padding */
+    }
