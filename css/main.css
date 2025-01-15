@@ -75,6 +75,7 @@ nav #Log:hover {
     padding: 20px;
     height: 100vh;
     position: fixed;
+    
 }
 
 .sidebar_logo {
@@ -99,16 +100,13 @@ nav #Log:hover {
 
 .sidebar_menu {
     list-style-type: none;
-    padding: 0;
+    margin-top: 62px;
+    flex-direction: column;
 }
 
 .sidebar_menu li {
-    margin: 15px 0;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin-top: 36px;
+     margin-top: 12px;
+   
 }
 
 .sidebar_button {
@@ -123,6 +121,7 @@ nav #Log:hover {
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
+    margin-top: 60px;
 }
 
 .sidebar_button:hover {
