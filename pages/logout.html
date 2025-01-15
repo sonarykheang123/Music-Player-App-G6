@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - SVM MUSIC</title>
+    <link rel="stylesheet" href="../css/logout.css">
+</head>
+<body>
+    <div class="logout-container">
+        <img src="/images/logo.jpg" alt="SVM MUSIC Logo" class="logo">
+
+        <h2>You are logged out</h2>
+
+        <p class="message">Thank you for using SVM MUSIC. You have successfully logged out.</p>
+        <button class="button" onclick="redirectToSignIn()">Sign In Again</button>
+        <button class="button colorbtn" onclick="redirectToHome()">Go to Home</button>
+    </div>
+
+    <script>
+        function redirectToSignIn() {
+            window.location.href = "./sign in.html";
+        }
+
+        function redirectToHome() {
+            window.location.href = "/";
+        }
+        localStorage.clear();
+        document.cookie = 'authToken=; Max-Age=0; path=/'; 
+    </script>
+</body>
+</html>
