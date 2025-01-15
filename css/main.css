@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #121212;
     color: #ffffff;
+    box-sizing: border-box;
 }
 
 .heading-nav_bar {
