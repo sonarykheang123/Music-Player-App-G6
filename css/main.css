@@ -71,6 +71,7 @@ nav #Log:hover{
     background-color: #1e1e1e;
     padding: 20px;
     height: 100vh; 
+    position: fixed;
 }
 
 .sidebar_logo {
@@ -82,8 +83,8 @@ nav #Log:hover{
     align-items: center;
     margin-bottom: 20px;
     position: absolute;
-    top: 40px; 
-    right: 93%; 
+    top:-32px; 
+    right: 60%; 
     transform: translateX(-50%);
 }
 
