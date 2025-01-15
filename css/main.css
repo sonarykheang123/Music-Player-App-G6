@@ -81,6 +81,10 @@ nav #Log:hover{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    position: absolute;
+    top: 40px; 
+    right: 93%; 
+    transform: translateX(-50%);
 }
 
 .sidebar_logo img {
