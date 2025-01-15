@@ -9,7 +9,10 @@ body {
     background-color: #1f1f1f;
     padding: 15px;
 }
-
+.header{
+    position: fixed;
+    width: 100%;
+}
 .nav_bar {
     display: flex;
     justify-content: space-between;
