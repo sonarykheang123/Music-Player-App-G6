@@ -1,0 +1,71 @@
+.container-khmer {
+    height: calc(100vh - 80px); /* Adjust for header height */
+    margin-left: 100px;
+}
+.cd{
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.li{
+    font-size: 50px;
+    margin-left: 200px;
+    color: #60BFFB;
+}
+.rolling {
+    width: 300px;
+    animation: roll 5s linear infinite;
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.letter-khmer {
+    margin-left: 350px; /* Centers the title */
+    margin-bottom: 20px; /* Add space below the title */
+}
+
+.letter-khmer h1 {
+    font-size: 36px; /* Adjust the font size of the title */
+    color: #ffffff; /* Set title color */
+    font-weight: 600; /* Make the title bold */
+}
+
+.song-khmer {
+    margin-top: 40px;
+}
+
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 5 songs in a row */
+    gap: 20px;
+    height: auto; /* Adjust height to fit content */
+    margin-top: 20px;
+    margin-left: 350px;
+    overflow-y: auto; /* Allow scrolling if needed */
+    
+}
+
+.song-cover {
+    background-color: #444;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    width: 120px; /* Set a fixed width for smaller covers */
+    height: auto; /* Adjust height automatically */
+}
+.song-cover img {
+    width: 100%; /* Image takes the full width of the container */
+    height: 100px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio while covering the space */
+    border-radius: 5px; /* Rounds the image corners */
+}
