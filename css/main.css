@@ -123,6 +123,12 @@ nav #Log:hover {
     transition: background-color 0.3s, border-color 0.3s;
     margin-top: 60px;
 }
+.sidebar_button a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
 
 .sidebar_button:hover {
     background-color: #3c3c3c;
