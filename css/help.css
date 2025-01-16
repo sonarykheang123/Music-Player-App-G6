@@ -1,0 +1,73 @@
+.container-help {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 42px;
+    margin-left: 420px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    margin-top: 50px;
+}
+
+a {
+    color: #50A6FF;
+}
+#help{
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 97%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.accordion {
+    background-color: #121212;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.accordion:hover {
+    background-color: #1e1e1e;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.accordion-title span {
+    font-size: 1.5em;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+.accordion.open .accordion-content {
+    display: block;
+}
