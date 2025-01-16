@@ -13,20 +13,8 @@
         <h2>You are logged out</h2>
 
         <p class="message">Thank you for using SVM MUSIC. You have successfully logged out.</p>
-        <button class="button" onclick="redirectToSignIn()">Sign In Again</button>
+        <button class="button" onclick="redirectToSignIn()"><a href="../pages/sign-in.html">Sign In Again</a></button>
         <button class="button colorbtn" onclick="redirectToHome()">Go to Home</button>
     </div>
-
-    <script>
-        function redirectToSignIn() {
-            window.location.href = "./sign in.html";
-        }
-
-        function redirectToHome() {
-            window.location.href = "/";
-        }
-        localStorage.clear();
-        document.cookie = 'authToken=; Max-Age=0; path=/'; 
-    </script>
 </body>
 </html>

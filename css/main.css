@@ -9,11 +9,21 @@ body {
     background-color: #1f1f1f;
     padding: 15px;
 }
-
+.header{
+    position: fixed;
+    width: 100%;
+}
 .nav_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .search input {
@@ -24,7 +34,6 @@ body {
     border-radius: 20px;
     background-color: #333;
     color: #ffffff;
-    margin-left: 680px;
 }
 
 .search input::placeholder {
@@ -75,21 +84,20 @@ nav #Log:hover {
     padding: 20px;
     height: 100vh;
     position: fixed;
-    
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Make sure the sidebar is above other content */
 }
 
 .sidebar_logo {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 20px;
-    position: absolute;
-    top: -32px;
-    right: 60%;
-    transform: translateX(-50%);
+    position: relative;
+    top: 0;
+    left:10%;  /* Ensure it's centered */
+    transform: translateX(-50%);  /* Adjust centering */
 }
 
 .sidebar_logo img {
@@ -106,7 +114,6 @@ nav #Log:hover {
 
 .sidebar_menu li {
     margin-top: 12px;
-   
 }
 
 .sidebar_button {
