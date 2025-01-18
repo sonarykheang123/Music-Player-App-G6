@@ -1,35 +1,34 @@
-function login() {
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+function login(event) {
+    event.preventDefault(); // Prevents form from reloading the page
 
-    if (username && password) {
-        // Store user credentials in localStorage (not secure for real apps)
-        localStorage.setItem('username', username);
-        localStorage.setItem('password', password);
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
 
-        // SweetAlert for login success with smaller alert
+    if (!username && !password) {
         Swal.fire({
-            title: 'Success!',
-            text: 'Login successful!',
-            icon: 'success',
-            confirmButtonText: 'OK',
-            customClass: {
-                popup: 'small-alert' // Apply custom class for smaller size
-            }
-        }).then(() => {
-            // Optionally, redirect to another page
-            // window.location.href = 'home.html';  // Uncomment to redirect
+            title: 'Warning!',
+            text: 'Please write something.',
+            icon: 'warning',
+            confirmButtonText: 'OK'
         });
-    } else {
-        // SweetAlert for missing fields with smaller alert
+    } else if (!username || !password) {
         Swal.fire({
             title: 'Error!',
             text: 'Please enter both username and password.',
             icon: 'error',
-            confirmButtonText: 'Try Again',
-            customClass: {
-                popup: 'small-alert' // Apply custom class for smaller size
-            }
+            confirmButtonText: 'OK'
+        });
+    } else {
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+
+        Swal.fire({
+            title: 'Success!',
+            text: 'Login successful!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        }).then(() => {
+            window.location.href = '../index.html'; 
         });
     }
 }
