@@ -4,17 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SVM MUSIC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="stylesheet" href="/css/login.css">
+    <!-- Include SweetAlert2 library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- Optional: Add a favicon -->
 </head>
 
 <body>
+
+
+
     <div class="login-container">
         <!-- Logo section -->
         <img src="/images/logo.jpg" alt="SVM MUSIC Logo" class="logo">
@@ -39,15 +49,17 @@
             <div></div>
         </div>
 
-        <!-- Username and password input fields -->
-        <input type="text" id="username" class="input-field" placeholder="Email or username" required>
-        <input type="password" id="password" class="input-field" placeholder="Password" required>
-
-        <!-- Login button -->
-        <button class="button colorbtn" onclick="login()">Log In</button>
+        <!-- Login Form -->
+        <form onsubmit="login(event)">
+            <input type="text" id="username" class="input-field" placeholder="Email or username">
+            <input type="password" id="password" class="input-field" placeholder="Password">
+            <button type="submit" class="button colorbtn">Log In</button>
+        </form>
     </div>
 
-<script src="/js/login.js"></script>
+    <script src="/js/login.js"></script>
+
+
 </body>
 
 </html>

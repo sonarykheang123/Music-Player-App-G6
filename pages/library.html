@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
-    <link rel="stylesheet" href="/css/main.css">  
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/library.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
 </head>
 
 <body>
@@ -46,29 +48,24 @@
                     <li><a href="/pages/setting.html">SETTINGS</a></li>
                 </ul>
             </nav>
-            <button class="sidebar_button">
-                LOG OUT
-                <span class="material-symbols-outlined">logout</span>
+            <button class="sidebar_button"> <a href="/pages/logout.html">LOG OUT</a><span class="material-symbols-outlined">logout</span>
             </button>
         </aside>
-    </div>
+        <!-- Song Sections -->
+        <div class="khmer-songs">
+            <div class="title">
+                <h1>Khmer Songs</h1>
+            </div>
+            <div class="khmer-container"></div> <!-- Container for Khmer Songs -->
+        </div>
     
- 
+        <div class="title1">
+            <h1>International Songs</h1>
+        </div>
+        <div class="foreign-container"></div> <!-- Container for Foreign Songs -->
+   
+    <script src="/js/library.js"></script>
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
