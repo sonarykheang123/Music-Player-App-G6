@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                     <option value="1.5">1.5x</option>
                                     <option value="2">2x</option>
                                 </select>
-                                <button class="next-song" onclick="nextSong('${audioId}')">Next Song</button>
                             </div>
                         </div>
                     `;
