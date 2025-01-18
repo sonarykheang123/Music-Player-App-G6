@@ -66,8 +66,8 @@ h2 {
 
 
 .colorbtn {
-    background: transparent;
-    color: #333;
+    background: #3b3b3b;
+    color: #fff;
     border: 2px solid #3b3b3b;
     border-radius: 8px;
     font-weight: bold;
@@ -75,8 +75,7 @@ h2 {
 }
 
 .colorbtn:hover {
-    background: #3b3b3b;
-    color: #fff;
+    background: #272424;
     transform: translateY(-2px); 
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
