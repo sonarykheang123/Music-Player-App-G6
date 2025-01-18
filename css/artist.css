@@ -1,0 +1,131 @@
+/* Name Singer Section */
+main{
+    width: 100%;
+    
+    position:static;
+    padding-top: 60px;
+    
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #f0f0f0;
+    margin-left: 300px;
+}
+
+/* Card Container for New Releases */
+.card-container {
+    display: flex;
+    gap: 16px;
+    margin-left: 300px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+
+}
+
+.cards {
+    border-radius: 8px;
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cards img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+}
+
+.cards br {
+    margin-bottom: 4px;
+}
+
+/* Additional Styling */
+.name-singer {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-left: 300px;
+    background-color: #121212;
+    margin-top: 40px;
+}
+
+.name img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    display: flex;
+}
+
+.nameSingers {
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+.left, .center, .right {
+    margin-right: 20px;
+    width: 30%; 
+    padding: 10px;
+}
+
+.hotsong {
+    display: flex;
+    justify-content: space-between; 
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+li img {
+    width: 60px; 
+    height: 60px;
+    margin-right: 10px; 
+    border-radius: 5px;
+}
+
+.nameSinger {
+    font-size: 0.9em;
+    color: gray;
+    gap: 10px;
+}
+
+.cards:hover, .card:hover {
+    transform: scale(1.1);
+}
+
+/* Hot Songs Layout */
+.hot-songs ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 300px;
+}
+
+.hot-songs ul li {
+    display: flex;
+    align-items: center;
+   
+}
+
+.hot-songs ul img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
