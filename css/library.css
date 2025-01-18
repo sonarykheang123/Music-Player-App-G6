@@ -1,0 +1,105 @@
+
+.khmer-songs {
+    padding: 20px;
+
+}
+
+.khmer-container, .foreign-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow cards to wrap */
+    justify-content: center;
+    /* Center the cards */
+    max-width: 1200px;
+    /* Set a max width for the container */
+    margin: 0 auto;
+    /* Center the container */
+    margin-left: 290px;
+}
+
+.artist-card {
+   
+    border-radius: 10px;
+    width: 150px;
+    /* Set a fixed width */
+    margin: 10px;
+    /* Margin around each card */
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow for depth */
+}
+
+.artist-card img {
+    width: 100%;
+    /* Make images responsive */
+    border-radius: 10px 10px 0 0;
+    /* Rounded corners at the top */
+}
+
+.artist-card h3 {
+    margin: 10px 0 5px;
+    /* Adjust heading margins */
+}
+
+.artist-card p {
+    color: #888;
+    /* Slightly lighter color */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.play-button {
+    background-color: #007bff;
+    /* Change button color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+    /* Smooth transition */
+    margin-right: 10px;
+}
+
+
+.more-icon {
+    margin-left: 20px; /* Space between More Icon and Play */
+    cursor: pointer;
+}
+
+
+.play-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.title {
+    margin-left: 300px;
+    margin-top: 80px;
+}
+.title1{
+    margin-left: 320px;
+    margin-top: 30px;
+}
+
+.title h1 {
+    font-size: 2em;
+    /* Increase title size */
+}
+
+.more-options {
+    position: absolute;
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+      
+
+    
