@@ -5,51 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+    <link rel="stylesheet" href="/css/help.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
 </head>
 
 <body>
-    <div class="heading-nav_bar">
-        <header class="nav_bar">
-            <div class="search">
-                <input type="text" placeholder="Search">
+    <div class="main-header">
+        <!-- Top Navigation Bar -->
+        <div class="header">
+            <div class="heading-nav_bar">
+                <header class="nav_bar">
+                    <div class="search">
+                        <input id="search-box" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a id="Sign" href="./sign-in.html">Sign in</a></li>
+                            <li><a id="Log" href="./login.html">Log in</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar_logo">
+                <img src="../images/logo.jpg" alt="Music Logo">
             </div>
             <nav>
-                <ul>
-                    <li><a id="Sign" href="./sign in.html">Sign in</a></li>
-                    <li><a id="Log" href="./login.html">Log in</a></li>
+                <ul class="sidebar_menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./library.html">LIBRARY</a></li>
+                    <li><a href="./artist.html">ARTIST</a></li>
+                    <li><a href="#">HELP</a></li>
+                    <li><a href="/pages/setting.html">SETTINGS</a></li>
                 </ul>
             </nav>
-        </header>
+            <button class="sidebar_button">
+                LOG OUT
+                <span class="material-symbols-outlined">logout</span>
+            </button>
+        </aside>
+    </div>
+    
+       <!-- help page -->
+       <div class="container-help">
+        <h1>SVM Support</h1>
+        <p id="help"><a href="#">Log in</a> for faster help</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-title">Payments & Billing <span>+</span></div>
+            <div class="accordion-content">
+                <p><a href="#"></a>Recommended topics</p>
+                <p><a href="#"></a>Manage payments</p>
+                <p><a href="#"></a>Payment methods</p>
+                <p><a href="#"></a>Charge help</p>
+
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-title">Manage Your Account <span>+</span></div>
+            <div class="accordion-content">
+                <p>Logging In</p>
+                <p>Profile Help</p>
+                <p>Account settings</p>
+                <p>Security</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-title">Premium Plans <span>+</span></div>
+            <div class="accordion-content">
+                <p>Available plans</p>
+                <p>Plan settings</p>
+                <p>Premium Family</p>
+                <p>Premium Duo</p>
+                <p>Premium Student</p>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-title">In-App Features <span>+</span></div>
+            <div class="accordion-content">
+                <p>Getting started</p>
+                <p>App settings</p>
+                <p>Troubleshooting</p>
+                <p>Playlists</p>
+                <p>Features</p>
+                <p>Social features</p>
+                <p>Podcasts</p>
+                <p>Audiobooks</p>
+                <p>Live events</p>
+                <p>Listening privacy</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-title">Devices & troubleshooting<span>+</span></div>
+            <div class="accordion-content">
+                <p>Speakers</p>
+                <p>Smart watches</p>
+                <p>TVs</p>
+                <p>Gaming</p>
+                <p>Cars</p>
+                <p>Voice assistants</p>
+            </div>
+        </div>
+        <div class="accordion">
+            <div class="accordion-title">Safety & privacy<span>+</span></div>
+            <div class="accordion-content">
+                <p>Data rights and privacy choices</p>
+                <p>Understanding my data</p>
+            </div>
+        </div>
     </div>
 
-
-
-    <div class="sidebar">
-        <div class="sidebar_logo">
-            <img src="../images/logo.jpg" alt="Music Logo">
-        </div>
-        <ul class="sidebar_menu">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="./library.html">LIBRARY</a></li>
-            <li><a href="./artist.html">ARTIST</a></li>
-            <li><a href="#">HELP</a></li>
-            <li><a href="./setting.html">SETTINGS</a></li>
-        </ul>
-        <div class="sidebar_button">
-            LOG OUT
-            <span class="material-symbols-outlined">
-                logout
-                </span>
-        </div>
-    </div>
-
+    <script src="/js/help.js"></script>
 </body>
 
 </html>
