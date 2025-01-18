@@ -1,71 +1,105 @@
-.container-khmer {
-    height: calc(100vh - 80px); /* Adjust for header height */
-    margin-left: 100px;
+
+.khmer-songs {
+    padding: 20px;
+
 }
-.cd{
+
+.khmer-container, .foreign-container {
     display: flex;
-    align-items: center;
-    position: fixed;
+    flex-wrap: wrap;
+    /* Allow cards to wrap */
+    justify-content: center;
+    /* Center the cards */
+    max-width: 1200px;
+    /* Set a max width for the container */
+    margin: 0 auto;
+    /* Center the container */
+    margin-left: 290px;
 }
 
-.li{
-    font-size: 50px;
-    margin-left: 200px;
-    color: #60BFFB;
-}
-.rolling {
-    width: 300px;
-    animation: roll 5s linear infinite;
-}
-
-@keyframes roll {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.letter-khmer {
-    margin-left: 350px; /* Centers the title */
-    margin-bottom: 20px; /* Add space below the title */
-}
-
-.letter-khmer h1 {
-    font-size: 36px; /* Adjust the font size of the title */
-    color: #ffffff; /* Set title color */
-    font-weight: 600; /* Make the title bold */
-}
-
-.song-khmer {
-    margin-top: 40px;
-}
-
-.song-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Display 5 songs in a row */
-    gap: 20px;
-    height: auto; /* Adjust height to fit content */
-    margin-top: 20px;
-    margin-left: 350px;
-    overflow-y: auto; /* Allow scrolling if needed */
-    
-}
-
-.song-cover {
-    background-color: #444;
+.artist-card {
+   
     border-radius: 10px;
-    padding: 10px;
+    width: 150px;
+    /* Set a fixed width */
+    margin: 10px;
+    /* Margin around each card */
     text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Add shadow for depth */
+}
+
+.artist-card img {
+    width: 100%;
+    /* Make images responsive */
+    border-radius: 10px 10px 0 0;
+    /* Rounded corners at the top */
+}
+
+.artist-card h3 {
+    margin: 10px 0 5px;
+    /* Adjust heading margins */
+}
+
+.artist-card p {
+    color: #888;
+    /* Slightly lighter color */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.play-button {
+    background-color: #007bff;
+    /* Change button color */
     color: white;
-    overflow: hidden;
-    width: 120px; /* Set a fixed width for smaller covers */
-    height: auto; /* Adjust height automatically */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+    /* Smooth transition */
+    margin-right: 10px;
 }
-.song-cover img {
-    width: 100%; /* Image takes the full width of the container */
-    height: 100px; /* Set a fixed height for images */
-    object-fit: cover; /* Maintain aspect ratio while covering the space */
-    border-radius: 5px; /* Rounds the image corners */
+
+
+.more-icon {
+    margin-left: 20px; /* Space between More Icon and Play */
+    cursor: pointer;
 }
+
+
+.play-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+.title {
+    margin-left: 300px;
+    margin-top: 80px;
+}
+.title1{
+    margin-left: 320px;
+    margin-top: 30px;
+}
+
+.title h1 {
+    font-size: 2em;
+    /* Increase title size */
+}
+
+.more-options {
+    position: absolute;
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+      
+
+    
