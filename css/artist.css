@@ -1,21 +1,21 @@
 /* Name Singer Section */
 main{
     width: 100%;
-    
     position:static;
     padding-top: 60px;
     
 }
 
-.section h2 {
+h1 {
     font-size: 24px;
     margin-bottom: 16px;
     color: #f0f0f0;
+    text-align: start;
     margin-left: 300px;
 }
 
 /* Card Container for New Releases */
-.card-container {
+.card-artist {
     display: flex;
     gap: 16px;
     margin-left: 300px;
@@ -39,9 +39,6 @@ main{
     margin-bottom: 8px;
 }
 
-.cards:hover {
-    transform: scale(1.05);
-}
 
 .cards br {
     margin-bottom: 4px;
@@ -71,61 +68,41 @@ main{
 .nameSingers {
     text-align: center;
     color: #ccc;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 6px;
     font-weight: bold;
 }
-.left, .center, .right {
-    margin-right: 20px;
-    width: 30%; 
-    padding: 10px;
-}
 
-.hotsong {
-    display: flex;
-    justify-content: space-between; 
-}
-
-li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-li img {
-    width: 60px; 
-    height: 60px;
-    margin-right: 10px; 
-    border-radius: 5px;
-}
-
-.nameSinger {
-    font-size: 0.9em;
-    color: gray;
+#popularSongs, #hotPlaylists, #khmerAlbums, #newReleasePlaylists,.nameSinger{
+    font-size:10px;
+    color: rgb(97, 96, 96);
     gap: 10px;
 }
-
-.cards:hover, .card:hover {
-    transform: scale(1.1);
+div{
+    color: #dfcfcf;
 }
 
-/* Hot Songs Layout */
-.hot-songs ul {
+
+.hot-songs-container {
     display: flex;
-    flex-direction: column;
-    padding: 0;
+    justify-content: space-between;
+    gap: 10px;
     margin-left: 300px;
+    
+  }
+.hot-songs-container img{
+    width: 150px;
+    height: 150px;
 }
 
-.hot-songs ul li {
+.hot-songs {
     display: flex;
-    align-items: center;
-   
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;  /* Centers content horizontally */
+  }
+.hot-songs .title{
+    font-size: 12px;
 }
-
-.hot-songs ul img {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-}
+  
+  
