@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
+    <link rel="stylesheet" href="/css/artist.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktGqcGNIe9SkGZfv1Tjt4UwtF5iomtvLOt4HI+7K8" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-
 <body>
     <div class="main-header">
         <!-- Top Navigation Bar -->
@@ -23,34 +22,82 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a id="Sign" href="./sign-in.html">Sign in</a></li>
-                            <li><a id="Log" href="./login.html">Log in</a></li>
+
+                            <li><a id="Sign" href="./pages/sign-in.html">Sign in</a></li>
+                            <li><a id="Log" href="./pages/login.html">Log in</a></li>
                         </ul>
                     </nav>
                 </header>
             </div>
         </div>
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar_logo">
-                <img src="../images/logo.jpg" alt="Music Logo">
-            </div>
-            <nav>
-                <ul class="sidebar_menu">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="./library.html">LIBRARY</a></li>
-                    <li><a href="#">ARTIST</a></li>
-                    <li><a href="./help.html">HELP</a></li>
-                    <li><a href="/pages/setting.html">SETTINGS</a></li>
-                </ul>
+    <div class="sidebar">
+        <div class="sidebar_logo">
+            <img src="/images/music.png" alt="Music">
+        </div>
+        <nav>
+            <ul class="sidebar_menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="/pages/library.html">LIBRARY</a></li>
+                <li><a href="#">ARTIST</a></li>
+                <li><a href="/pages/help.html">HELP</a></li>
+                <li><a href="/pages/setting.html">SETTINGS</a></li>
+            </ul>
             </nav>
             <button class="sidebar_button"> <a href="/pages/logout.html">LOG OUT</a><span class="material-symbols-outlined">logout</span>
             </button>
         </aside>
     </div>
     
-    
+     <div class="container-artist">
+            
+            </div>
+        </div>
+        <main>
+               <div class="Popular singer">
+                <h2>Khmer Popular Artist</h2>
+                <section class="name-singers">
+                    <div class="name"><img src="/images/aok sokunkanha.jpg" alt=""><div class="nameSingers">Aok sokunkanha</div></div>
+                    <div class="name"><img src="/images/vannda.jpg" alt=""><div class="nameSingers">Vannda Man</div></div>
+                    <div class="name"><img src="/images/Tenna.jpg" alt=""><div class="nameSingers">Tena</div></div>
+                    <div class="name"><img src="/images/Cartel meeting.png" alt=""><div class="nameSingers">La cima cartel</div></div>
+                    <div class="name"><img src="/images/Sinn_Sisamouth.jpg" alt=""><div class="nameSingers">Sinn Sisamouth</div></div>
+                    <div class="name"><img src="/images/penran.jpg" alt=""><div class="nameSingers">Pen Ran</div></div>
+                    <div class="name"><img src="/images/Ros Sereysothea.png" alt=""><div class="nameSingers">Ros Sereysothea</div></div>
+                </section>
+                <section class="name-singers">
+                    <div class="name"><img src="/images/Nico-khmer.png" alt=""><div class="nameSingers">Nico</div></div>
+                    <div class="name"><img src="/images/Pich sophea.png" alt=""><div class="nameSingers">Pich Sophea</div></div>
+                    <div class="name"><img src="/images/Meas Soksophea.png" alt=""><div class="nameSingers">Meas Soksophea</div></div>
+                    <div class="name"><img src="/images/G-devith.png" alt=""><div class="nameSingers">G-Devith</div></div>
+                    <div class="name"><img src="/images/Preap sovath.png" alt=""><div class="nameSingers">Preap Sovath</div></div>
+                    <div class="name"><img src="/images/Nisa.png" alt=""><div class="nameSingers">sokun nisa</div></div>
+                    <div class="name"><img src="/images/M-fatt.png" alt=""><div class="nameSingers">M-Fatt</div></div>
+                </section>
+               </div>
+               <div class="Popular-singer">
+                <h2>International Popular Artist</h2>
+                <section class="name-singers">
+                    <div class="name"><img src="/images/taylor swift.jpg" alt=""><div class="nameSingers">Taylor Swift</div></div>
+                    <div class="name"><img src="/images/arina.png" alt=""><div class="nameSingers">Ariana Grande</div></div>
+                    <div class="name"><img src="/images/eillie bilish.jpg" alt=""><div class="nameSingers">Billie Eilish</div></div>
+                    <div class="name"><img src="/images/just.png" alt=""><div class="nameSingers">Justin Bieber</div></div>
+                    <div class="name"><img src="/images/Bruno Mars.jpg" alt=""><div class="nameSingers">Bruno Mars</div></div>
+                    <div class="name"><img src="/images/Adele.png" alt=""><div class="nameSingers">Adele</div></div>
+                    <div class="name"><img src="/images/Beyonge`.png" alt=""><div class="nameSingers">Beyoncé</div></div>
+                </section>
+                <section class="name-singers">
+                    <div class="name"><img src="/images/Oliva.png" alt=""><div class="nameSingers">Olivia Rodrigo</div></div>
+                    <div class="name"><img src="/images/selena.png" alt=""><div class="nameSingers">Selena Gomez</div></div>
+                    <div class="name"><img src="/images/lady gaga.png" alt=""><div class="nameSingers">Lady Gaga</div></div>
+                    <div class="name"><img src="/images/Rihanna.png" alt=""><div class="nameSingers">Rihanna</div></div>
+                    <div class="name"><img src="/images/lana.png" alt=""><div class="nameSingers">Lana Del Rey</div></div>
+                    <div class="name"><img src="/images/sai.png" alt=""><div class="nameSingers">sia</div></div>
+                    <div class="name"><img src="/images/The Weekend.png" alt=""><div class="nameSingers">The weeknd</div></div>
+                </section>
+               </div>
+
+            </main>
     <!-- Footer -->
     <footer class="bg-dark text-white pt-4">
         <div class="container">
@@ -85,9 +132,10 @@
             </div>
         </div>
     </footer>
+        <script src="/js/artist.js"></script>
 </body>
-
 </html>
+
 
 
 

@@ -129,12 +129,14 @@ nav #Log:hover {
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
     margin-top: 60px;
+
 }
 .sidebar_button a{
     color: white;
     text-decoration: none;
     margin-left: 10px;
     transition: color 0.3s ease;
+
 }
 
 .sidebar_button:hover {
@@ -158,18 +160,17 @@ nav #Log:hover {
 }
 
 footer {
-    background-color: #121414; 
+    background-color: #131111; 
     color: #ffffff; 
     padding-top: 20px; 
     padding-bottom: 10px; 
     font-family: sans-serif;
-    
 }
 .bg-dark{
-    width: 80%;
-    margin: 0 auto;
-    margin-left: 290px;
-    margin-top: 40px;
+    width: calc(100% - 200px); /* Ensures flexibility instead of fixed 79% */
+    margin: 40px auto 0; /* Combines margin properties */
+    margin-left: 302px; /* Keeps the intended left margin */
+    max-width: 1200px; /* Prevents excessive width on larger screens */
 }
 footer h5 {
     font-size: 1.2rem; 

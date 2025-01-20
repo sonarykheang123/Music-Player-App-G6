@@ -1,0 +1,265 @@
+{
+    "newReleasePlaylists": [
+      {
+        "image": "/images/lover.png",
+        "title": "Lover",
+        "artist": "Taylor Swift",
+        "audio": "/music/Lover.mp3"
+      },
+      {
+        "image": "/images/អង្វរ.png",
+        "title": "អង្វរ",
+        "artist": "Tena",
+        "audio": "/music/Angvor.mp3"
+      },
+      {
+        "image": "/images/ស្នាមស្នេហ៍សមុទ្ររាម.png",
+        "title": "ស្នាមស្នេហ៍សមុទ្ររាម",
+        "artist": "Aok Sokunkanha",
+        "audio": "/music/Snam_Sne_Samotram.mp3"
+      },
+      {
+        "image": "/images/jeff satur.jpg",
+        "title": "DUM DUM",
+        "artist": "Jeff Satur",
+        "audio": "/music/Dum_Dum.mp3"
+      },
+      {
+        "image": "/images/happier.png",
+        "title": "Happier",
+        "artist": "Billie Eilish",
+        "audio": "/music/Happier.mp3"
+      },
+      {
+        "image": "/images/ON.png",
+        "title": "ON",
+        "artist": "BTS",
+        "audio": "/music/ON.mp3"
+      },
+      {
+        "image": "/images/thank u next.png",
+        "title": "Thank U Next",
+        "artist": "Ariana Grande",
+        "audio": "/music/Thank_U_Next.mp3"
+      },
+      {
+        "image": "/images/Bong.jpg",
+        "title": "BONG",
+        "artist": "OG BOBBY - VannDa",
+        "audio": "/music/Bong.mp3"
+      }
+    ],
+    "hotSongs": {
+        "left": [
+          {
+            "image": "/images/Die With A Smile.jpg",
+            "title": "Die With A Smile",
+            "artist": "Lady Gaga, Bruno Mars",
+            "audio": "/music/Die_With_A_Smile.mp3"
+          },
+          {
+            "image": "/images/BIRDS OF A FEATHER.jpg",
+            "title": "BIRDS OF A FEATHER",
+            "artist": "Billie Eilish",
+            "audio": "/music/Birds_Of_A_Feather.mp3"
+          },
+          {
+            "image": "/images/APT.jpg",
+            "title": "APT",
+            "artist": "ROSÉ & Bruno Mars",
+            "audio": "/music/APT.mp3"
+          }
+        ],
+        "center": [
+          {
+            "image": "/images/the lazy.png",
+            "title": "The Lazy",
+            "artist": "Bruno Mars",
+            "audio": "/music/The_Lazy.mp3"
+          },
+          {
+            "image": "/images/CHASE ATLANTIC.jpg",
+            "title": "Swim",
+            "artist": "Chase Atlantic",
+            "audio": "/music/Swim.mp3"
+          },
+          {
+            "image": "/images/Blank Space.png",
+            "title": "Blank Space",
+            "artist": "Taylor Swift",
+            "audio": "/music/Blank_Space.mp3"
+          }
+        ],
+        "right": [
+          {
+            "image": "/images/starboy.png",
+            "title": "Star Boy",
+            "artist": "The Weeknd",
+            "audio": "/music/Star_Boy.mp3"
+          },
+          {
+            "image": "/images/Revival (Deluxe).png",
+            "title": "Revival (Deluxe)",
+            "artist": "Selena Gomez",
+            "audio": "/music/Revival_Deluxe.mp3"
+          },
+          {
+            "image": "/images/into-you.png",
+            "title": "Into You",
+            "artist": "Ariana Grande",
+            "audio": "/music/Into_You.mp3"
+          }
+        ]
+      },
+    "popularSongs": [
+      {
+        "image": "/images/Die With A Smile.jpg",
+        "title": "Die With A Smile",
+        "artist": "Lady Gaga, Bruno Mars",
+        "audio": "/music/Die_With_A_Smile.mp3"
+      },
+      {
+        "image": "/images/BIRDS OF A FEATHER.jpg",
+        "title": "Birds Of A Feather",
+        "artist": "Billie Eilish",
+        "audio": "/music/Birds_Of_A_Feather.mp3"
+      },
+      {
+        "image": "/images/starboy.png",
+        "title": "Star Boy",
+        "artist": "The Weeknd",
+        "audio": "/music/Star_Boy.mp3"
+      },
+      {
+        "image": "/images/CHASE ATLANTIC.jpg",
+        "title": "Swim",
+        "artist": "Chase Atlantic",
+        "audio": "/music/Swim.mp3"
+      },
+      {
+        "image": "/images/APT.jpg",
+        "title": "APT",
+        "artist": "ROSÉ & Bruno Mars",
+        "audio": "/music/APT.mp3"
+      },
+      {
+        "image": "/images/happier.png",
+        "title": "Happier",
+        "artist": "Billie Eilish",
+        "audio": "/music/Happier.mp3"
+      },
+      {
+        "image": "/images/the lazy.png",
+        "title": "The Lazy",
+        "artist": "Bruno Mars",
+        "audio": "/music/The_Lazy.mp3"
+      },
+      {
+        "image": "/images/PiXXiE.jpg",
+        "title": "ติดฝน (rain)",
+        "artist": "PiXXiE",
+        "audio": "/music/Tid_Fon.mp3"
+      }
+    ],
+    "hotPlaylists": [
+      {
+        "image": "/images/Blank Space.png",
+        "title": "Blank Space",
+        "artist": "Taylor Swift",
+        "audio": "/music/Blank_Space.mp3"
+      },
+      {
+        "image": "/images/Revival (Deluxe).png",
+        "title": "Revival (Deluxe)",
+        "artist": "Selena Gomez",
+        "audio": "/music/Revival_Deluxe.mp3"
+      },
+      {
+        "image": "/images/die for you.jpg",
+        "title": "Die For You",
+        "artist": "The Weeknd",
+        "audio": "/music/Die_For_You.mp3"
+      },
+      {
+        "image": "/images/Mantra.jpg",
+        "title": "Mantra",
+        "artist": "Jennie",
+        "audio": "/music/Mantra.mp3"
+      },
+      {
+        "image": "/images/into-you.png",
+        "title": "Into You",
+        "artist": "Ariana Grande",
+        "audio": "/music/Into_You.mp3"
+      },
+      {
+        "image": "/images/bad guy.jpg",
+        "title": "Bad Guy",
+        "artist": "Billie Eilish",
+        "audio": "/music/Bad_Guy.mp3"
+      },
+      {
+        "image": "/images/Bruno Mars.jpg",
+        "title": "Bonde Do Brunao",
+        "artist": "Bruno",
+        "audio": "/music/Bonde_Do_Brunao.mp3"
+      },
+      {
+        "image": "/images/Earned It.jpg",
+        "title": "Earned It",
+        "artist": "The Weeknd",
+        "audio": "/music/Earned_It.mp3"
+      }
+    ],
+    "khmerAlbums": [
+      {
+        "image": "/images/Chen.png",
+        "title": "ពងទា",
+        "artist": "Chen",
+        "audio": "/music/Pong_Tea.mp3"
+      },
+      {
+        "image": "/images/ក្រោកឈរ.jpg",
+        "title": "ក្រោកឈរ",
+        "artist": "Aok Sokunkanha",
+        "audio": "/music/Kraok_Chor.mp3"
+      },
+      {
+        "image": "/images/អង្វរ.png",
+        "title": "អង្វរ",
+        "artist": "Tena",
+        "audio": "/music/Angvor.mp3"
+      },
+      {
+        "image": "/images/vannda-song.png",
+        "title": "Catch Me If You Can",
+        "artist": "Vannda",
+        "audio": "/music/Catch_Me_If_You_Can.mp3"
+      },
+      {
+        "image": "/images/myboo.png",
+        "title": "My Boo",
+        "artist": "Tena",
+        "audio": "/music/My_Boo.mp3"
+      },
+      {
+        "image": "/images/nico.png",
+        "title": "សង្ស័យ",
+        "artist": "Nico",
+        "audio": "/music/Sangsai.mp3"
+      },
+      {
+        "image": "/images/G devit.png",
+        "title": "អប្សរា",
+        "artist": "G Devith",
+        "audio": "/music/wanna.mp3"
+      },
+      {
+        "image": "/images/GMENGZ.jpg",
+        "title": "កុំច្រឡំ",
+        "artist": "GMENGZ",
+        "audio": "/music/Kom_Chrolom.mp3"
+      }
+    ]
+  }
+  
