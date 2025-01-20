@@ -158,7 +158,6 @@ nav #Log:hover {
 .sidebar_menu li a:hover {
     color: #50A6FF;
 }
-
 footer {
     background-color: #131111; 
     color: #ffffff; 
@@ -177,17 +176,14 @@ footer h5 {
     font-weight: bold; 
     margin-bottom: 15px; 
 }
-
 footer p {
     font-size: 0.9rem; 
     line-height: 1.6; 
 }
-
 footer ul {
     padding: 0;
     list-style: none;
 }
-
 footer ul li {
     margin-bottom: 10px; 
 }
@@ -207,26 +203,23 @@ footer ul li {
 .row{
     display: flex;
     justify-content: space-around;
+    margin-left: 20px;
 }
 footer ul li a {
     color: #ffffff; 
     text-decoration: none; 
     transition: color 0.3s;
 }
-
 footer ul li a:hover {
     color: #0d6efd; 
 }
-
 footer a {
     color: #ffffff; 
     transition: color 0.3s; 
 }
-
 footer a:hover {
     color: #0d6efd;
 }
-
 footer .social-icons a {
     font-size: 2.5rem; 
     margin-right: 15px;
@@ -246,7 +239,6 @@ footer .social-icons a {
 footer .social-icons a:hover {
     color: #2d90bd; 
 }
-
 footer .text-center {
     border-top: 1px solid #343a40;
     padding-top: 10px; 

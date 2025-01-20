@@ -72,3 +72,8 @@ a:hover {
 .accordion.open .accordion-content {
     display: block;
 }
+
+
+.accordion.hidden {
+    display: none;
+}

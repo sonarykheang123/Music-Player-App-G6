@@ -1,58 +1,46 @@
-
 .khmer-songs {
     padding: 20px;
-
 }
 
-.khmer-container, .foreign-container {
-    display: flex;
-    flex-wrap: wrap;
-    /* Allow cards to wrap */
+.khmer-container,
+.foreign-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
-    /* Center the cards */
-    max-width: 1200px;
-    /* Set a max width for the container */
-    margin: 0 auto;
-    /* Center the container */
-    margin-left: 290px;
+    margin-left: 300px;
+}
+
+.foreign-container {
+    margin-left: 320px;
+    width: 75%;
 }
 
 .artist-card {
-   
     border-radius: 10px;
     width: 150px;
-    /* Set a fixed width */
     margin: 10px;
-    /* Margin around each card */
     text-align: center;
     padding: 10px;
     transition: transform 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add shadow for depth */
 }
 
 .artist-card img {
     width: 100%;
-    /* Make images responsive */
     border-radius: 10px 10px 0 0;
-    /* Rounded corners at the top */
 }
 
 .artist-card h3 {
     margin: 10px 0 5px;
-    /* Adjust heading margins */
 }
 
 .artist-card p {
     color: #888;
-    /* Slightly lighter color */
     margin: 0;
-    /* Remove default margin */
 }
 
 .play-button {
     background-color: #007bff;
-    /* Change button color */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -60,34 +48,30 @@
     cursor: pointer;
     margin: 10px 0;
     transition: background-color 0.3s;
-    /* Smooth transition */
     margin-right: 10px;
 }
 
-
-.more-icon {
-    margin-left: 20px; /* Space between More Icon and Play */
-    cursor: pointer;
-}
-
-
 .play-button:hover {
     background-color: #0056b3;
-    /* Darker blue on hover */
+}
+
+.more-icon {
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 .title {
     margin-left: 300px;
     margin-top: 80px;
 }
-.title1{
+
+.title1 {
     margin-left: 320px;
     margin-top: 30px;
 }
 
 .title h1 {
     font-size: 2em;
-    /* Increase title size */
 }
 
 .more-options {
@@ -97,9 +81,158 @@
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    display: none; /* Initially hidden */
+    display: none;
 }
 
-      
+/* Tablet Responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .search input {
+        width: 200px;
+        height: 20px;
+        margin-left: 220px;
+    }
 
-    
+    .artist-card h3 {
+        margin: 8px 0 5px;
+        font-size: 10px;
+    }
+
+    .artist-card {
+        width: 130px;
+    }
+
+    .sidebar_logo img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+
+    .sidebar {
+        height: 100%;
+    }
+
+    .sidebar_menu {
+        font-size: 24px;
+        margin-top: 70px;
+    }
+
+    .khmer-container,
+    .foreign-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 50%;
+        margin: 0 auto;
+        gap: 3px;
+    }
+
+    .khmer-container {
+        margin-left: 350px;
+    }
+
+    .foreign-container {
+        margin-left: 360px;
+    }
+
+    .bg-dark {
+        margin-left: 300px;
+    }
+    footer p{
+        display: none;
+    }
+    footer h5{
+        font-size: 5px;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+    .khmer-container,
+    .foreign-container {
+        margin-left: 200px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title {
+        font-size: 12px;
+        margin-left: 200px;
+    }
+
+    .title1 {
+        font-size: 10px;
+        margin-left: 220px;
+    }
+
+    .artist-card {
+        width: 200px;
+    }
+
+    .khmer-container {
+        margin-left: 205px;
+    }
+
+    .foreign-container {
+        margin-left: 215px;
+    }
+
+    .sidebar_logo img {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .sidebar {
+        width: 150px;
+        height: 100%;
+    }
+
+    .search input {
+        width: 200px;
+        height: 10%;
+        margin-left: 150px;
+    }
+
+    .sidebar_menu {
+        margin-top: 40px;
+    }
+
+    .sidebar_button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    nav ul #Log,
+    #Sign {
+        display: none;
+    }
+
+    .bg-dark {
+        margin-left: 180px;
+    }
+
+    .col-md-4 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .col-md-4-mb-4 h5 {
+        display: none;
+    }
+
+    .text-white {
+        display: flex;
+    }
+
+    .list-unstyled {
+        margin-left: 30px;
+    }
+    .me-3 {
+        margin-left: 10px;
+    }
+    footer h5,
+    p {
+        display: none;
+    }
+
+    .bi-linkedin {
+        margin-left: 30px;
+    }
+}
