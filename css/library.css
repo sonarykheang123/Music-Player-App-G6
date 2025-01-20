@@ -8,14 +8,11 @@
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     margin-left: 300px;
-
-
 }
 
 .foreign-container {
     margin-left: 320px;
     width: 75%;
-
 }
 
 .artist-card {
@@ -87,8 +84,8 @@
     display: none;
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px){
+/* Tablet Responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
     .search input {
         width: 200px;
         height: 20px;
@@ -101,17 +98,19 @@
     }
 
     .artist-card {
-        width: 170px;
-
+        width: 130px;
     }
+
     .sidebar_logo img {
         width: 120px;
         height: 120px;
         border-radius: 100%;
     }
+
     .sidebar {
         height: 100%;
     }
+
     .sidebar_menu {
         font-size: 24px;
         margin-top: 70px;
@@ -123,29 +122,30 @@
         grid-template-columns: repeat(3, 1fr);
         width: 50%;
         margin: 0 auto;
-        gap: 5px;
-        
+        gap: 3px;
     }
 
     .khmer-container {
-        margin-left: 390px;
+        margin-left: 350px;
     }
 
     .foreign-container {
-        margin-left: 400px;
+        margin-left: 360px;
     }
-    .bg-dark{
+
+    .bg-dark {
         margin-left: 300px;
     }
-    .col-md-4-mb-4 .text-white{
-        margin: 10px;
+    footer p{
+        display: none;
     }
-
+    footer h5{
+        font-size: 5px;
+    }
 }
 
-
+/* Mobile Responsive */
 @media (max-width: 767px) {
-
     .khmer-container,
     .foreign-container {
         margin-left: 200px;
@@ -155,7 +155,6 @@
     .title {
         font-size: 12px;
         margin-left: 200px;
-
     }
 
     .title1 {
@@ -165,7 +164,6 @@
 
     .artist-card {
         width: 200px;
-
     }
 
     .khmer-container {
@@ -192,8 +190,6 @@
         margin-left: 150px;
     }
 
-
-
     .sidebar_menu {
         margin-top: 40px;
     }
@@ -201,49 +197,42 @@
     .sidebar_button {
         font-size: 14px;
         padding: 8px 15px;
-
     }
 
     nav ul #Log,
     #Sign {
         display: none;
-
     }
+
     .bg-dark {
         margin-left: 180px;
-    
     }
-    
+
     .col-md-4 img {
         width: 50px;
         height: 50px;
-    
     }
-    footer .social-icons a {
-        font-size: 0.2rem; 
-        display: flex;
-        flex-direction: column;
-    }
+
     .col-md-4-mb-4 h5 {
         display: none;
     }
+
     .text-white {
         display: flex;
-    
     }
-    .list-unstyled{
+
+    .list-unstyled {
         margin-left: 30px;
     }
-    .me-3{
-    margin-left: 10px;
+    .me-3 {
+        margin-left: 10px;
     }
     footer h5,
     p {
         display: none;
     }
-    .bi-linkedin{
+
+    .bi-linkedin {
         margin-left: 30px;
-    
     }
 }
-
