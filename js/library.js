@@ -134,4 +134,3 @@ function nextSong(currentAudioId) {
         alert("This is the last song.");
     }
 }
-
