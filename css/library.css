@@ -88,7 +88,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px){
     .search input {
         width: 200px;
         height: 20px;
@@ -101,35 +101,50 @@
     }
 
     .artist-card {
-        width: 130px;
+        width: 170px;
 
     }
-    .sidebar{
+    .sidebar_logo img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+    .sidebar {
         height: 100%;
     }
+    .sidebar_menu {
+        font-size: 24px;
+        margin-top: 70px;
+    }
+
     .khmer-container,
     .foreign-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 50%;
         margin: 0 auto;
-        gap: 2px;
-        margin-left: 300px;
+        gap: 5px;
+        
     }
 
     .khmer-container {
-        margin-left: 355px;
+        margin-left: 390px;
     }
 
     .foreign-container {
-        margin-left: 365px;
+        margin-left: 400px;
     }
-    
-    
+    .bg-dark{
+        margin-left: 300px;
+    }
+    .col-md-4-mb-4 .text-white{
+        margin: 10px;
+    }
+
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
 
     .khmer-container,
     .foreign-container {
@@ -154,11 +169,11 @@
     }
 
     .khmer-container {
-        margin-left: 220px;
+        margin-left: 205px;
     }
 
     .foreign-container {
-        margin-left: 240px;
+        margin-left: 215px;
     }
 
     .sidebar_logo img {
@@ -172,11 +187,12 @@
     }
 
     .search input {
-        width: 100px;
+        width: 200px;
         height: 10%;
+        margin-left: 150px;
     }
 
-   
+
 
     .sidebar_menu {
         margin-top: 40px;
@@ -187,8 +203,47 @@
         padding: 8px 15px;
 
     }
-    nav ul #Log, #Sign{
-     display: none;
-        
+
+    nav ul #Log,
+    #Sign {
+        display: none;
+
     }
-} 
+    .bg-dark {
+        margin-left: 180px;
+    
+    }
+    
+    .col-md-4 img {
+        width: 50px;
+        height: 50px;
+    
+    }
+    footer .social-icons a {
+        font-size: 0.2rem; 
+        display: flex;
+        flex-direction: column;
+    }
+    .col-md-4-mb-4 h5 {
+        display: none;
+    }
+    .text-white {
+        display: flex;
+    
+    }
+    .list-unstyled{
+        margin-left: 30px;
+    }
+    .me-3{
+    margin-left: 10px;
+    }
+    footer h5,
+    p {
+        display: none;
+    }
+    .bi-linkedin{
+        margin-left: 30px;
+    
+    }
+}
+
