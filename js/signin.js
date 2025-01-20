@@ -53,9 +53,9 @@ function signUp() {
                 popup: 'small-alert'
             }
         }).then(() => {
-            // Optionally redirect to the login or home page
-            // window.location.href = 'login.html'; // Uncomment to redirect after sign-up
+            window.location.href = '../index.html'; 
         });
+        
     }
 
 }

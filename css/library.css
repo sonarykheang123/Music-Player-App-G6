@@ -90,7 +90,7 @@
 
 @media (max-width: 768px) {
     .search input {
-        width: 180px;
+        width: 200px;
         height: 20px;
         margin-left: 220px;
     }
@@ -101,10 +101,12 @@
     }
 
     .artist-card {
-        width: 100px;
+        width: 130px;
 
     }
-
+    .sidebar{
+        height: 100%;
+    }
     .khmer-container,
     .foreign-container {
         display: grid;
@@ -116,13 +118,14 @@
     }
 
     .khmer-container {
-        margin-left: 325px;
+        margin-left: 355px;
     }
 
     .foreign-container {
-        margin-left: 330px;
+        margin-left: 365px;
     }
-
+    
+    
 }
 
 
@@ -132,7 +135,6 @@
     .foreign-container {
         margin-left: 200px;
         grid-template-columns: repeat(1, 1fr);
-        /* 2 items per row on mobile */
     }
 
     .title {
@@ -189,4 +191,4 @@
      display: none;
         
     }
-}
+} 

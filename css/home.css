@@ -1,0 +1,130 @@
+/* Name Singer Section */
+main{
+    width: 100%;
+    position:static;
+    padding-top: 60px;
+    
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #f0f0f0;
+    text-align: start;
+    margin-left: 320px;
+    gap: 10px;
+}
+
+/* Card Container for New Releases */
+.card-artist {
+    display: flex;
+    gap: 16px;
+    margin-left: 320px;
+    scroll-behavior: smooth;
+    overflow: hidden;
+
+}
+
+.cards {
+    border-radius: 8px;
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+}
+
+.cards img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+
+.cards br {
+    margin-bottom: 4px;
+}
+
+/* Additional Styling */
+.name-singer {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-left: 320px;
+    background-color: #121212;
+    margin-top: 40px;
+}
+
+.name img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8px;
+    display: flex;
+}
+
+.nameSingers {
+    text-align: center;
+    color: #ccc;
+    font-size: 18px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+#popularSongs, #hotPlaylists, #khmerAlbums, #newReleasePlaylists,.nameSinger{
+    font-size:10px;
+    color: rgb(97, 96, 96);
+    gap: 10px;
+}
+div{
+    color: #dfcfcf;
+}
+
+
+.hot-songs-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 310px;
+    
+  }
+.hot-songs-container img{
+    width: 150px;
+    height: 150px;
+}
+
+.hot-songs {
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    align-items: center;  /* Centers content horizontally */
+  }
+.hot-songs .title{
+    font-size: 10px;
+}
+@media (max-width: 768px){
+   
+    .sisebar{
+        width: 150px;
+    }
+    .search input {
+        width: 190px;
+        margin-left: 200px;
+    }
+}
+@media (max-width: 480px){
+    .sisebar{
+        width: 50%;
+    }
+    .sidebar_logo img{
+        width: 70px;
+        height: 70px;
+    }
+    .sidebar_button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
