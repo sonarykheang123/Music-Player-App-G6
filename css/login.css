@@ -91,14 +91,12 @@ h2 {
 .input-field {
     width: 100%;
     padding: 10px;
-    /* Reduced from 12px */
     margin: 8px 0;
     border: 1px solid #444;
     border-radius: 5px;
     background-color: #333;
     color: white;
     font-size: 14px;
-    /* Reduced from 16px */
     transition: border-color 0.3s;
 }
 
@@ -139,45 +137,35 @@ h2 {
 @media (max-width: 480px) {
     .login-container {
         width: 85%;
-        /* Reduced from 90% */
         padding: 15px;
-        /* Reduced from 20px */
     }
 
     h2 {
         font-size: 18px;
-        /* Reduced from 20px */
     }
 
     .button,
     .input-field {
         font-size: 13px;
-        /* Adjusted for smaller screens */
     }
 }
 
 .small-alert {
     max-width: 300px;
-    /* Reduce the width */
     padding: 15px;
-    /* Adjust padding */
     font-size: 14px;
-    /* Reduce font size */
 }
 
 .small-alert .swal2-title {
     font-size: 18px;
-    /* Smaller title font size */
 }
 
 .small-alert .swal2-content {
     font-size: 14px;
-    /* Smaller content font size */
+   
 }
 
 .small-alert .swal2-actions button {
     font-size: 14px;
-    /* Smaller button font size */
     padding: 6px 12px;
-    /* Smaller button padding */
 }
