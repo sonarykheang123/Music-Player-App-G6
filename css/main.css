@@ -159,18 +159,17 @@ nav #Log:hover {
     color: #50A6FF;
 }
 footer {
-    background-color: #121414; 
+    background-color: #131111; 
     color: #ffffff; 
     padding-top: 20px; 
     padding-bottom: 10px; 
     font-family: sans-serif;
-    
 }
-.bg-dark {
-    width: calc(100% - 290px); 
-    margin: 40px auto 0; 
-    margin-left: 290px; 
-    max-width: 1200px; 
+.bg-dark{
+    width: calc(100% - 200px); /* Ensures flexibility instead of fixed 79% */
+    margin: 40px auto 0; /* Combines margin properties */
+    margin-left: 302px; /* Keeps the intended left margin */
+    max-width: 1200px; /* Prevents excessive width on larger screens */
 }
 
 footer h5 {
