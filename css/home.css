@@ -24,7 +24,9 @@ h1 {
     overflow: hidden;
 
 }
-
+p{
+    font-size: 14px;
+}
 .cards {
     border-radius: 8px;
     width: 180px;
@@ -54,7 +56,7 @@ h1 {
     scroll-behavior: smooth;
     margin-left: 320px;
     background-color: #121212;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .name img {
@@ -75,9 +77,9 @@ h1 {
 }
 
 #popularSongs, #hotPlaylists, #khmerAlbums, #newReleasePlaylists,.nameSinger{
-    font-size:11px;
+    font-size:10px;
     color: rgb(97, 96, 96);
-    gap: 10px;
+    gap: 7px;
 }
 div{
     color: #dfcfcf;
@@ -98,6 +100,27 @@ btn{
         height: 20px;
         margin-left: 200px;
     }
+    .bg-dark {
+        width: calc(100% - 250px);
+        margin-left: 260px;
+        margin-bottom: 60px;
+    }
+    footer p{
+        display: none;
+    }   
+    .col-md-4mb-4{
+        display: none;
+    }
+    .list-unstyled{
+        display: none;
+    }
+    .text-center {
+        display: none;
+    }
+    footer h5{
+        font-size: 5px;
+    }
+
 }
 @media (max-width: 480px){
     .sidebar_logo img {
