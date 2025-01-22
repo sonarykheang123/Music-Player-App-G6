@@ -1,3 +1,11 @@
+.banner img{
+    width: 80.9%;
+    margin-left: 290px;
+    height: 60vh;
+}
+.header{
+    position: sticky;
+}
 .khmer-songs {
     padding: 20px;
 }
@@ -91,7 +99,11 @@
         height: 20px;
         margin-left: 220px;
     }
-
+    .banner img{
+        width: 80.9%;
+        margin-left: 180px;
+        height: 50vh;
+    }
     .artist-card h3 {
         margin: 8px 0 5px;
         font-size: 10px;
@@ -161,6 +173,9 @@
     .foreign-container {
         margin-left: 200px;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .banner{
+        display: none;
     }
     .main-header{
         font-size: 16px;
