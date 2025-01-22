@@ -87,10 +87,11 @@ p{
 div{
     color: #dfcfcf;
 }
-btn{
+.play-button{
     background: rgb(6, 177, 207);
     font-size: 12px;
     padding:5px 12px;
+    color: white;
     border: none;
     border-radius: 4px;
 }
