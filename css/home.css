@@ -18,7 +18,7 @@ h1 {
 /* Card Container for New Releases */
 .card-artist {
     display: flex;
-    gap: 16px;
+    gap: 10px;
     margin-left: 320px;
     scroll-behavior: smooth;
     overflow: hidden;
@@ -48,7 +48,7 @@ h1 {
 /* Additional Styling */
 .name-singer {
     display: flex;
-    gap: 16px;
+    gap: 10px;
     padding: 16px;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -75,35 +75,18 @@ h1 {
 }
 
 #popularSongs, #hotPlaylists, #khmerAlbums, #newReleasePlaylists,.nameSinger{
-    font-size:10px;
+    font-size:11px;
     color: rgb(97, 96, 96);
     gap: 10px;
 }
 div{
     color: #dfcfcf;
 }
-
-
-.hot-songs-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-left: 310px;
-    
-  }
-.hot-songs-container img{
-    width: 150px;
-    height: 150px;
-}
-
-.hot-songs {
-    display: flex;
-    flex-direction: row;
-    font-size: 10px;
-    align-items: center;  /* Centers content horizontally */
-  }
-.hot-songs .title{
-    font-size: 10px;
+btn{
+    background: rgb(15, 192, 246);
+    padding:5px 12px;
+    border: none;
+    border-radius: 4px;
 }
 @media (max-width: 768px){
    
@@ -111,20 +94,68 @@ div{
         width: 150px;
     }
     .search input {
-        width: 190px;
+        width: 180px;
+        height: 20px;
         margin-left: 200px;
     }
 }
 @media (max-width: 480px){
-    .sisebar{
-        width: 50%;
+    .sidebar_logo img {
+        width: 90px;
+        height: 90px;
+        margin-left: 10px;
     }
-    .sidebar_logo img{
-        width: 70px;
-        height: 70px;
+
+    .sidebar {
+        width: 150px;
+        height: 100%;
     }
+
+    .search input {
+        width: 100px;
+        height: 10%;
+        margin-left: 100px;
+    }
+
+    .sidebar_menu {
+        margin-top: 40px;
+    }
+
     .sidebar_button {
-        font-size: 10px;
-        padding: 5px 10px;
+        font-size: 14px;
+        padding: 5px 8px;
+
+    }
+    nav ul #Log, #Sign{
+     display: none;
+        
+    }
+    .name-singer {
+        margin-left: 180px;
+        gap: 4px;
+       
+    }
+    
+    .name img {
+        width: 100px;
+        height: 100px;
+    }
+    .cards img {
+        width: 80px;
+        height: 80px;
+        
+    }
+    .card-artist {
+        margin-left: 190px;
+        gap: 3px;
+    }
+    h1{
+        font-size: 18px;
+        margin-left: 200px;
+
+    }
+    #popularSongs, #hotPlaylists, #khmerAlbums, #newReleasePlaylists,.nameSinger {
+        font-size: 6px;
+        
     }
 }

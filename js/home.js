@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const cardContainers = document.querySelectorAll('.card-artist');
     const section = document.querySelector('.name-singer');
-    const cardSong = document.querySelector('.hot-songs');
     
     cardContainers.forEach(container => {
         container.addEventListener('wheel', (event) => {
@@ -68,7 +67,7 @@ function createMusicPlayer(musicData) {
       audioElement.src = songAudio;
       audioElement.preload = "none";
 
-      const toggleButton = document.createElement("button");
+      const toggleButton = document.createElement("btn");
       toggleButton.textContent = "Play";
 
       // Event listener for play/stop functionality
