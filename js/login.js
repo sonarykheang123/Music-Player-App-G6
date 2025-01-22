@@ -1,3 +1,5 @@
+
+// Login Function
 function login(event) {
     event.preventDefault(); // Prevents form from reloading the page
 
@@ -19,16 +21,25 @@ function login(event) {
             confirmButtonText: 'OK'
         });
     } else {
-        localStorage.setItem('username', username);
-        localStorage.setItem('password', password);
-
-        Swal.fire({
-            title: 'Success!',
-            text: 'Login successful!',
-            icon: 'success',
-            confirmButtonText: 'OK'
-        }).then(() => {
-            window.location.href = '../index.html'; 
-        });
+        signInWithEmailAndPassword(auth, username, password)
+            .then((userCredential) => {
+                const user = userCredential.user;
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Login successful!',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then(() => {
+                    window.location.href = '../index.html'; 
+                });
+            })
+            .catch((error) => {
+                Swal.fire({
+                    title: 'Error!',
+                    text: error.message,
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                });
+            });
     }
 }

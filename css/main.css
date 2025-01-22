@@ -166,12 +166,13 @@ footer {
     font-family: sans-serif;
     
 }
-.bg-dark{
-    width: 80%;
-    margin: 0 auto;
-    margin-left: 290px;
-    margin-top: 40px;
+.bg-dark {
+    width: calc(100% - 290px); 
+    margin: 40px auto 0; 
+    margin-left: 290px; 
+    max-width: 1200px; 
 }
+
 footer h5 {
     font-size: 1.2rem; 
     font-weight: bold; 

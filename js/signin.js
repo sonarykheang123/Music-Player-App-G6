@@ -1,61 +1,92 @@
-function onSignUp(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    console.log("Google User Info: ", profile);
-    alert('Welcome, ' + profile.getName());
+// Import Firebase SDKs
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
 
-    // Handle further sign-up actions (store user info, etc.)
-    var id_token = googleUser.getAuthResponse().id_token;
-    // You can send this token to your server for validation
-}
+// Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyAQKbl1RSZABOtpb2BhVErbEG6_WBV9w_M",
+    authDomain: "sig-up-ae29a.firebaseapp.com",
+    projectId: "sig-up-ae29a",
+    storageBucket: "sig-up-ae29a.appspot.com",
+    messagingSenderId: "949922451901",
+    appId: "1:949922451901:web:2119cfbdfa62d53fb842d4"
+};
 
-// Handle standard sign-up with form
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+// Sign-up function
 function signUp() {
-    const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
 
-    if (!name || !email || !password || !confirmPassword) {
-        // SweetAlert for missing fields (small size)
+    if (!email || !password || !confirmPassword) {
         Swal.fire({
             title: 'Error!',
             text: 'Please fill in all the required fields.',
             icon: 'error',
-            confirmButtonText: 'OK',
-            customClass: {
-                popup: 'small-alert'
-            }
+            confirmButtonText: 'OK'
         });
-    } else if (password !== confirmPassword) {
-        // SweetAlert for password mismatch (small size)
+        return;
+    }
+
+    if (password !== confirmPassword) {
         Swal.fire({
             title: 'Error!',
             text: 'Passwords do not match.',
             icon: 'error',
-            confirmButtonText: 'Try Again',
-            customClass: {
-                popup: 'small-alert'
-            }
+            confirmButtonText: 'Try Again'
         });
-    } else {
-        // Store user information in localStorage (for demo purposes, not secure)
-        localStorage.setItem('name', name);
-        localStorage.setItem('email', email);
-        localStorage.setItem('password', password);
-
-        // SweetAlert for success (small size)
-        Swal.fire({
-            title: 'Success!',
-            text: 'Sign-up successful!',
-            icon: 'success',
-            confirmButtonText: 'OK',
-            customClass: {
-                popup: 'small-alert'
-            }
-        }).then(() => {
-            window.location.href = '../index.html'; 
-        });
-        
+        return;
     }
 
+    // Firebase authentication
+    createUserWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Account created successfully!',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                window.location.href = '../index.html';
+            });
+
+            // Store user info (for demo purposes, not secure)
+            localStorage.setItem('email', email);
+        })
+        .catch((error) => {
+            Swal.fire({
+                title: 'Error!',
+                text: error.message,
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+        });
+}
+
+// Event listener for the sign-up button
+document.addEventListener("DOMContentLoaded", function () {
+    const signupBtn = document.getElementById('signup-btn');
+    if (signupBtn) {
+        signupBtn.addEventListener('click', signUp);
+    }
+});
+
+// Google Sign-In Function
+function onSignUp(googleUser) {
+    const profile = googleUser.getBasicProfile();
+    console.log("Google User Info: ", profile);
+
+    Swal.fire({
+        title: 'Welcome!',
+        text: `Hello, ${profile.getName()}!`,
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+
+    const id_token = googleUser.getAuthResponse().id_token;
+    console.log("Google ID Token:", id_token);
 }
