@@ -22,38 +22,40 @@
 
 <body>
 
-
+    <!-- <h1 class="soon">Coming Soon</h1> -->
 
     <div class="login-container">
         <!-- Logo section -->
         <img src="/images/logo.jpg" alt="SVM MUSIC Logo" class="logo">
 
         <h2>Log in to SVM MUSIC</h2>
-
-        <!-- Social login buttons with images -->
-        <button class="button">
-            <img src="/images/google.png" alt="Google" class="icon"> Continue with Google
-        </button>
-        <button class="button">
-            <img src="/images/facebook.png" alt="Facebook" class="icon"> Continue with Facebook
-        </button>
-        <button class="button">
-            <img src="/images/apple.png" alt="Apple" class="icon"> Continue with Apple
-        </button>
-
-        <!-- Divider section -->
-        <div class="divider">
-            <div></div>
-            <span>Or</span>
-            <div></div>
-        </div>
-
-        <!-- Login Form -->
         <form onsubmit="login(event)">
             <input type="text" id="username" class="input-field" placeholder="Email or username">
             <input type="password" id="password" class="input-field" placeholder="Password">
             <button type="submit" class="button colorbtn">Log In</button>
         </form>
+
+        <div class="divider">
+            <div></div>
+            <span>Or</span>
+            <div></div>
+        </div>
+        <!-- Social login buttons with images -->
+        <button class="button">
+            <img src="/images/google.png" alt="Google" class="icon icon1"> Continue with Google
+        </button>
+        <button class="button">
+            <img src="/images/facebook.png" alt="Facebook" class="icon icon2"> Continue with Facebook
+        </button>
+        <button class="button">
+            <img src="/images/apple.png" alt="Apple" class="icon icon3"> Continue with Apple
+        </button>
+
+        <!-- Divider section -->
+       
+
+        <!-- Login Form -->
+       
     </div>
 
     <script  src="/js/login.js"></script>
