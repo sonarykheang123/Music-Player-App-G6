@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     card.innerHTML = `
                         <img src="${song.image}" alt="${song.artist}">
                         <h3>${song.artist}</h3>
-                        <p>${song.plays}</p>
+                        <p>${song.title}</p>
                     `;
 
                     // Add click listener to play the song based on its list

@@ -20,3 +20,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all the sidebar links
+    const sidebarLinks = document.querySelectorAll('.sidebar_menu li a');
+
+    // Get the current URL path
+    const currentUrl = window.location.pathname;
+
+    // Loop through each sidebar link
+    sidebarLinks.forEach(link => {
+        // Check if the href matches the current URL path
+        if (currentUrl.includes(link.getAttribute('href'))) {
+            // Add the 'active' class to the matched link
+            link.classList.add('active');
+        }
+    });
+});

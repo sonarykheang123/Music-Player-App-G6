@@ -19,6 +19,7 @@ body {
     align-items: center;
 }
 
+
 .search {
     display: flex;
     justify-content: center;
@@ -112,6 +113,7 @@ nav #Log:hover {
     flex-direction: column;
 }
 
+
 .sidebar_menu li {
     margin-top: 12px;
 }
@@ -149,15 +151,31 @@ nav #Log:hover {
     color: #fff;
     transition: color 0.3s ease;
 }
-
 .sidebar_menu li a {
     color: #ffffff;
     text-decoration: none;
+    padding: 10px;
+    display: block;
 }
 
-.sidebar_menu li a:hover {
-    color: #50A6FF;
+/* Active link styling */
+.sidebar_menu li a.active {
+    color: #9896f7; /* Active link color */
+    font-weight: bold;
 }
+
+/* Hover effect */
+.sidebar_menu li a:hover {
+    color: #50A6FF; /* Hover link color */
+}
+
+/* Underline effect for active link */
+.sidebar_menu li a.active {
+    text-decoration: underline; /* Underline the active link */
+}
+
+
+
 footer {
     background-color: #131111; 
     color: #ffffff; 
