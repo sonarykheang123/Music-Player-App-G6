@@ -17,6 +17,8 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktGqcGNIe9SkGZfv1Tjt4UwtF5iomtvLOt4HI+7K8" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
 </head>
 
 <body>
@@ -63,9 +65,9 @@
             </div>
             <nav>
                 <ul class="sidebar_menu">
-                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
                     <li><a href="/pages/library.html">LIBRARY</a></li>
-                    <li><a href="#">ARTIST</a></li>
+                    <li><a href="/pages/artist.html">ARTIST</a></li>
                     <li><a href="/pages/help.html">HELP</a></li>
                     <li><a href="/pages/setting.html">SETTINGS</a></li>
                 </ul>
@@ -75,47 +77,9 @@
             </button>
             </aside>
         </div>
-
-        <main>
-            <section class="name-singer">
-                <div class="name"><img src="/images/taylor swift.jpg" alt="">
-                    <div class="nameSingers">taylor swift</div>
-                </div>
-                <div class="name"><img src="/images/vannda.jpg" alt="">
-                    <div class="nameSingers">Vannda Man</div>
-                </div>
-                <div class="name"><img src="/images/Tenna.jpg" alt="">
-                    <div class="nameSingers">Tena</div>
-                </div>
-                <div class="name"><img src="/images/aok sokunkanha.jpg" alt="">
-                    <div class="nameSingers">aok sokunkanha</div>
-                </div>
-                <div class="name"><img src="/images/penran.jpg" alt="">
-                    <div class="nameSingers">Pen Ran</div>
-                </div>
-                <div class="name"><img src="/images/Sinn_Sisamouth.jpg" alt="">
-                    <div class="nameSingers">Sinn Sisamouth</div>
-                </div>
-                <div class="name"><img src="/images/Bruno.jpg" alt="">
-                    <div class="nameSingers">Bruno</div>
-                </div>
-                <div class="name"><img src="/images/ARIANA.jpg" alt="">
-                    <div class="nameSingers">Ariana Grande</div>
-                </div>
-                <div class="name"><img src="/images/eillie bilish.jpg" alt="">
-                    <div class="nameSingers">Eillie Bilish</div>
-                </div>
-                <div class="name"><img src="/images/Jeff-Satur.jpg" alt="">
-                    <div class="nameSingers">Jeff Satur</div>
-                </div>
-                <div class="name"><img src="/images/BLACKPINK.jpg" alt="">
-                    <div class="nameSingers">Black Pink</div>
-                </div>
-                <div class="name"><img src="/images/BTS-7.jpg" alt="">
-                    <div class="nameSingers">BTS</div>
-                </div>
-
-        </main>
+        <div class="banner">
+            <img  id="changingImage"src="/images/image1.png" alt="">
+        </div>
         <h1>New Release Playlists</h1>
         <div class="card-artist" id="newReleasePlaylists"></div>
         <h1>Popular Songs</h1>

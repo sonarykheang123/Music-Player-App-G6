@@ -1,40 +1,41 @@
-/* Name Singer Section */
-main{
+/* Main Section */
+main {
     width: 100%;
-    position:static;
+    position: static;
     padding-top: 60px;
-    
 }
 
+/* Heading Style */
 h1 {
     font-size: 24px;
-    margin-bottom: 16px;
     color: #f0f0f0;
     text-align: start;
-    margin-left: 320px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0 30px 320px;
     gap: 10px;
 }
 
-/* Card Container for New Releases */
 .card-artist {
     display: flex;
     gap: 10px;
     margin-left: 320px;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical overflow */
+    white-space: nowrap; /* Prevent items from wrapping */
+    padding-bottom: 10px; /* Add space below for better visuals */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
 
+.card-artist::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Edge, and Safari */
 }
-p{
-    font-size: 14px;
-    
-}
+
 .cards {
     border-radius: 8px;
     width: 180px;
     text-align: center;
     padding: 10px;
+    flex-shrink: 0; /* Prevent cards from shrinking */
 }
 
 .cards img {
@@ -44,24 +45,6 @@ p{
     object-fit: cover;
     margin-bottom: 8px;
 }
-
-
-.cards br {
-    margin-bottom: 4px;
-}
-
-/* Additional Styling */
-.name-singer {
-    display: flex;
-    gap: 10px;
-    padding: 16px;
-    overflow: hidden;
-    scroll-behavior: smooth;
-    margin-left: 320px;
-    background-color: #121212;
-    margin-top: 10px;
-}
-
 .name img {
     width: 150px;
     height: 150px;
@@ -79,24 +62,40 @@ p{
     font-weight: bold;
 }
 
-#popularSongs, #hotPlaylists, #khmerAlbums, #newReleasePlaylists,.nameSinger{
-    font-size:10px;
-    color: rgb(97, 96, 96);
-    gap: 7px;
-}
-div{
-    color: #dfcfcf;
-}
-.play-button{
+/* Play Button */
+.play-button {
     background: rgb(6, 177, 207);
     font-size: 12px;
-    padding:5px 12px;
+    padding: 5px 12px;
     color: white;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
+
+.play-button:hover {
+    background: rgb(4, 145, 175); /* Add hover effect for better interaction */
+}
+
+/* Optional Styling for Popular Sections */
+#popularSongs, #hotPlaylists, #khmerAlbums, #newReleasePlaylists, .nameSinger {
+    font-size: 12px;
+    color: rgb(250, 246, 246);
+    gap: 7px;
+}
+
+.binner img {
+    width: 100%;
+    margin-left: 290px;
+    height: 60vh;
+  }
+  
+
 @media (max-width: 768px){
-   
+    .cards img{
+        width: 180px;
+        height: 180px;
+    }
     .sisebar{
         width: 150px;
     }
@@ -133,7 +132,9 @@ div{
         height: 90px;
         margin-left: 10px;
     }
-
+    .nameSingers{
+        font-size: 12px;
+    }
     .sidebar {
         width: 150px;
         height: 100%;
@@ -169,8 +170,8 @@ div{
         height: 100px;
     }
     .cards img {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
         
     }
     .card-artist {
@@ -178,12 +179,15 @@ div{
         gap: 3px;
     }
     h1{
-        font-size: 18px;
+        font-size: 16px;
         margin-left: 200px;
 
     }
     #popularSongs, #hotPlaylists, #khmerAlbums, #newReleasePlaylists,.nameSinger {
-        font-size: 6px;
+        font-size: 10px;
         
     }
+    footer {
+        display: none;
+    } 
 }
