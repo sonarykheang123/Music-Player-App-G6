@@ -77,3 +77,114 @@ a:hover {
 .accordion.hidden {
     display: none;
 }
+@media (min-width: 768px) and (max-width: 1024px){
+    .header{
+        margin-left: 20px;
+    }
+    .container-help {
+        margin-left: 150px;
+    }
+    #Sign{
+        display: none;
+    }
+    #Log{
+        display: none;
+    }
+    .search input {
+        width: 200px;
+        height: 20px;
+        margin-left: 220px;
+    }
+    .artist-card h3 {
+        margin: 8px 0 5px;
+        font-size: 10px;
+    }
+
+    .artist-card {
+        width: 130px;
+    }
+
+    .sidebar_logo img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: 100%;
+    }
+
+    .sidebar_menu {
+        font-size: 24px;
+        margin-top: 70px;
+    }
+    .accordio{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .search-bar{
+        margin-left: 140px;
+        width: 300px;
+    }
+    .accordion-title{
+        font-size: 16px;
+        margin-left: 130px;
+    }
+    .accordion-content{
+        font-size: 14px;
+        margin-left: 130px;
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        margin-left: 10px;
+    }
+    .container-help {
+        margin-left: 50px;
+    }
+    #Sign, #Log {
+        display: none;
+    }
+    .search input {
+        width: 150px;
+        height: 20px;
+        margin-left: 20px;
+    }
+    .artist-card h3 {
+        margin: 5px 0 3px;
+        font-size: 8px;
+    }
+    .artist-card {
+        width: 100px;
+    }
+    .sidebar_logo img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .sidebar {
+     display: none;
+        
+    }
+    .sidebar_menu {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .accordio {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .search-bar {
+        margin-left: 20px;
+        width: 200px;
+    }
+    .accordion-title {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .accordion-content {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+}
