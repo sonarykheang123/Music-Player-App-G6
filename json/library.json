@@ -1,187 +1,188 @@
 {
-    "khmerSongs" :[
-      {
-        "artist": "Jen-ចេន",
-        "plays": "ជូនអូនទៅរកគេ",
-        "image": "/images/jen.png",
-        "audio": "/music/CHEN_ជនអនទរកគ_Choun_Oun_Tov_rk_Ke_LYRICS_AUDIO_BY_LOYLYRICS.mp3"
-      },
-      {
-        "artist": "Ean Rita",
-        "plays": "អ្នកក្រោយច្បាស់លាស់",
-        "image": "/images/rita.png",
-        "audio": "/music/song2.mp3"
-      },
-      {
-        "artist": "Sophia Kao",
-        "plays": "តួច្រណែន",
-        "image": "/images/sofee.png",
-        "audio": "/music/តចរណន  Cover by Sophia Kao.mp3"
-      },
-      {
-        "artist": "Tena-ថេណា",
-        "plays": "ប្រពន្ធកម្សត់",
-        "image": "/images/tena.png",
-        "audio": "/music/Tena - បរពនធកសត.mp3"
-      },
-      {
-        "artist": "All3rgy & YCN ",
-        "plays": "ផ្កាស្លា",
-        "image": "/images/ycn.png",
-        "audio": "/music/All3rgy & YCN Rakhie - ផកសល (She's the one) [Official Visualizer].mp3"
-      },
-      {
-        "artist": "Sokunkanha",
-        "plays": "ស្នាមស្នេហ៍សមុទ្ររាម",
-        "image": "/images/Oak Sokunkanha.png",
-        "audio": "/music/[Remake] សនមសនហសមទររម, Snam Sne Samut Ream - Lyrics.mp3"
-      },
-      {
-        "artist": "Pen Rorn",
-        "plays": "លាដែនប៉ៃលិន",
-        "image": "/images/rorn.png",
-        "audio": "/music/យនតហបពយ ចរងដយ បន រន.mp3"
-      },
-      {
-        "artist": "Sin Sisamouth",
-        "plays": "ចំប៉ីសៀមរាប",
-        "image": "/images/samoth.png",
-        "audio": "/music/ចបសមរប - សន សសមត  Sin Sisamuth  ចមរងមស  Old Song.mp3"
-      },
-      {
-        "artist": "Pich Solika",
-        "plays": "បើអូនជួបគេ",
-        "image": "/images/lika.png",
-        "audio": "/music/បអនជបគ - ពជរ សលក [Lyric Audio].mp3"
-      },
-      {
-        "artist": "CHIWAWA",
-        "plays": "ភ្លេចរបៀបណា ",
-        "image": "/images/wa.png",
-        "audio": "/music/ភលចរបបណ chiwawa [ Official Lyric VIDEO ].mp3"
-      },
-      {
-        "artist": "Sereysothea",
-        "plays": "ជំនោរប៉ៃលិន",
-        "image": "/images/thea.png",
-        "audio": "/music/ជនរបលន - រស សរសទធ   ChomNo Pailin - Ros Sereysothea [Lyrics].mp3"
-      },
-      {
-        "artist": "Vanthan&Da",
-        "plays": "កម្លោះស្រុកខ្មែរ​​​ ",
-        "image": "/images/vanda.png",
-        "audio": "/music/Vanthan x VannDa - កមលសរកខមរ (Khmer Gentlemen) [Official Video].mp3"
-      },
-      {
-        "artist": "Suly Pheng ",
-        "plays": "មិនច្បាស់ជាមួយអូន",
-        "image": "/images/pheng.png",
-        "audio": "/music/Suly Pheng - មនចបសជមយអន ft. Olica (Lyrics Video).mp3"
-      },
-      {
-        "artist": "ALL3 ",
-        "plays": "1o girls",
-        "image": "/images/10g.png",
-        "audio": "/music/YCN RAKHIE, ALL3RGY - 10 [Official Visualizer].mp3"
-      },
-      {
-        "artist": "​GMENGZ ",
-        "plays": "កុំច្រឡំ​ ",
-        "image": "/images/gmeng.png",
-        "audio": "/music/GMENGZ - កចរឡ ( បងទបតពញកល )  OFFICIAL LYRIC VIDEO.mp3"
-      }
-    ],
-    "foreignSongs": [
-      {
-        "artist": " Taylor Swift",
-        "plays": "Blank Space",
-        "image": "/images/taylor.png",
-        "audio": "/music/Taylor Swift - Blank Space.mp3"
-      },
-      {
-        "artist": "Billie Eilish",
-        "plays": "BIRDS FEATHER",
-        "image": "/images/billi.png",
-        "audio": "/music/Billie Eilish - BIRDS OF A FEATHER.mp3"
-      },
-      {
-        "artist": "Madison Beer",
-        "plays": "Reckless",
-        "image": "/images/beer.png",
-        "audio": "/music/Madison Beer - Reckless (Lyrics).mp3"
-      },
-      {
-        "artist": "Sai",
-        "plays": "Snowman",
-        "image": "/images/sai.png",
-        "audio": "/music/Sia - Snowman.mp3"
-      },
-      {
-        "artist": "Numchok",
-        "plays": "I just wanna",
-        "image": "/images/wana.png",
-        "audio": "/music/wanna.mp3" 
-      },
-      {
-        "artist": " PiXXiE",
-        "plays": " Rain",
-        "image": "/images/rain.png",
-        "audio": "/music/[THAIROMENG] PiXXiE - ตดฝน (rain) [LYRICS].mp3"
-      },
-      {
-        "artist": "Gaga&Bruno ",
-        "plays": "Die With A Smile",
-        "image": "/images/die.png",
-        "audio": "/music/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3"
-      },
-      {
-        "artist": "Vanda",
-        "plays": "Bong",
-        "image": "/images/bong.png",
-        "audio": "/music/OG BOBBY - BONG Feat. VannDa (Prod. by NINO) OFFICIAL MV.mp3"
-      },
-      {
-        "artist": "Taylor",
-        "plays": "Enchanted",
-        "image": "/images/tl.png",
-        "audio": "/music/Enchanted.mp3"
-      },
-      {
-        "artist": " Zack Tabudlo",
-        "plays": "Pano",
-        "image": "/images/pano.png",
-        "audio": "/music/Zack Tabudlo - Pano (Lyric Video).mp3"
-      },
-      {
-        "artist": "ROSÉ & Bruno",
-        "plays": "APT",
-        "image": "/images/apt.png",
-        "audio": "/music/ROSE & Bruno Mars - APT. (Official Music Video).mp3"
-      },
-      {
-        "artist": "YOUNG&SPRITE ",
-        "plays": "Kiminoto",
-        "image": "/images/kiminoto.png",
-        "audio": "/music/SPRITE KIMINOTO Ft. Youngohm (Prod. by Nino & Mosshu) Lyrics [ThaiRomEng].mp3"
-      },
-      {
-        "artist": "Ariana Grande",
-        "plays": "Die for you",
-        "image": "/images/dfr.png",
-        "audio": "/music/The Weeknd, Ariana Grande - Die For You (Remix  Lyric Video).mp3"
-      },
-      {
-        "artist": " PARIS",
-        "plays": "รักติดไซเรน ",
-        "image": "/images/thai.png",
-        "audio": "/music/PARIS, PEARWAH - รกตดไซเรน (My Ambulance) [Official Lyrics Video].mp3"
-      },
-      {
-        "artist": "Ruth B",
-        "plays": "Dandelions",
-        "image": "/images/ruth.png",
-        "audio": "/music/Ruth B. - Dandelions (Lyrics).mp3"
-      }
-   
-    ]
-  }
+  "khmerSongs" :[
+    {
+      "artist": "Jen-ចេន",
+      "title": "ជូនអូនទៅរកគេ",
+      "image": "/images/jen.png",
+      "audio": "/music/CHEN_ជនអនទរកគ_Choun_Oun_Tov_rk_Ke_LYRICS_AUDIO_BY_LOYLYRICS.mp3"
+    },
+    {
+      "artist": "Ean Rita",
+      "title": "អ្នកក្រោយច្បាស់លាស់",
+      "image": "/images/rita.png",
+      "audio": "/music/song2.mp3"
+    },
+    {
+      "artist": "Sophia Kao",
+      "title": "តួច្រណែន",
+      "image": "/images/sofee.png",
+      "audio": "/music/តចរណន  Cover by Sophia Kao.mp3"
+    },
+    {
+      "artist": "Tena-ថេណា",
+      "title": "ប្រពន្ធកម្សត់",
+      "image": "/images/tena.png",
+      "audio": "/music/Tena - បរពនធកសត.mp3"
+    },
+    {
+      "artist": "All3rgy & YCN ",
+      "title": "ផ្កាស្លា",
+      "image": "/images/ycn.png",
+      "audio": "/music/All3rgy & YCN Rakhie - ផកសល (She's the one) [Official Visualizer].mp3"
+    },
+    {
+      "artist": "Sokunkanha",
+      "title": "ស្នាមស្នេហ៍សមុទ្ររាម",
+      "image": "/images/Oak Sokunkanha.png",
+      "audio": "/music/[Remake] សនមសនហសមទររម, Snam Sne Samut Ream - Lyrics.mp3"
+    },
+    {
+      "artist": "Pen Rorn",
+      "title": "លាដែនប៉ៃលិន",
+      "image": "/images/rorn.png",
+      "audio": "/music/យនតហបពយ ចរងដយ បន រន.mp3"
+    },
+    {
+      "artist": "Sin Sisamouth",
+      "title": "ចំប៉ីសៀមរាប",
+      "image": "/images/samoth.png",
+      "audio": "/music/ចបសមរប - សន សសមត  Sin Sisamuth  ចមរងមស  Old Song.mp3"
+    },
+    {
+      "artist": "Pich Solika",
+      "title": "បើអូនជួបគេ",
+      "image": "/images/lika.png",
+      "audio": "/music/បអនជបគ - ពជរ សលក [Lyric Audio].mp3"
+    },
+    {
+      "artist": "CHIWAWA",
+      "title": "ភ្លេចរបៀបណា ",
+      "image": "/images/wa.png",
+      "audio": "/music/ភលចរបបណ chiwawa [ Official Lyric VIDEO ].mp3"
+    },
+    {
+      "artist": "Sereysothea",
+      "title": "ជំនោរប៉ៃលិន",
+      "image": "/images/thea.png",
+      "audio": "/music/ជនរបលន - រស សរសទធ   ChomNo Pailin - Ros Sereysothea [Lyrics].mp3"
+    },
+    {
+      "artist": "Vanthan&Da",
+      "title": "កម្លោះស្រុកខ្មែរ​​​ ",
+      "image": "/images/vanda.png",
+      "audio": "/music/Vanthan x VannDa - កមលសរកខមរ (Khmer Gentlemen) [Official Video].mp3"
+    },
+    {
+      "artist": "Suly Pheng ",
+      "title": "មិនច្បាស់ជាមួយអូន",
+      "image": "/images/pheng.png",
+      "audio": "/music/Suly Pheng - មនចបសជមយអន ft. Olica (Lyrics Video).mp3"
+    },
+    {
+      "artist": "ALL3 ",
+      "title": "1o girls",
+      "image": "/images/10g.png",
+      "audio": "/music/YCN RAKHIE, ALL3RGY - 10 [Official Visualizer].mp3"
+    },
+    {
+      "artist": "​GMENGZ ",
+      "title": "កុំច្រឡំ​ ",
+      "image": "/images/gmeng.png",
+      "audio": "/music/GMENGZ - កចរឡ ( បងទបតពញកល )  OFFICIAL LYRIC VIDEO.mp3"
+    }
+  ],
+  "foreignSongs": [
+    {
+      "artist": " Taylor Swift",
+      "title": "Blank Space",
+      "image": "/images/taylor.png",
+      "audio": "/music/Taylor Swift - Blank Space.mp3"
+    },
+    {
+      "artist": "Billie Eilish",
+      "title": "BIRDS FEATHER",
+      "image": "/images/billi.png",
+      "audio": "/music/Billie Eilish - BIRDS OF A FEATHER.mp3"
+    },
+    {
+      "artist": "Madison Beer",
+      "title": "Reckless",
+      "image": "/images/beer.png",
+      "audio": "/music/Madison Beer - Reckless (Lyrics).mp3"
+    },
+    {
+      "artist": "Sai",
+      "title": "Snowman",
+      "image": "/images/sai.png",
+      "audio": "/music/Sia - Snowman.mp3"
+    },
+    {
+      "artist": "Numchok",
+      "title": "I just wanna",
+      "image": "/images/wana.png",
+      "audio": "/music/wanna.mp3" 
+    },
+    {
+      "artist": " PiXXiE",
+      "title": " Rain",
+      "image": "/images/rain.png",
+      "audio": "/music/[THAIROMENG] PiXXiE - ตดฝน (rain) [LYRICS].mp3"
+    },
+    {
+      "artist": "Gaga&Bruno ",
+      "title": "Die With A Smile",
+      "image": "/images/die.png",
+
+      "audio": "/music/Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video).mp3"
+    },
+    {
+      "artist": "Vanda",
+      "title": "Bong",
+      "image": "/images/bong.png",
+      "audio": "/music/OG BOBBY - BONG Feat. VannDa (Prod. by NINO) OFFICIAL MV.mp3"
+    },
+    {
+      "artist": "Taylor",
+      "title": "Enchanted",
+      "image": "/images/tl.png",
+      "audio": "/music/Enchanted.mp3"
+    },
+    {
+      "artist": " Zack Tabudlo",
+      "title": "Pano",
+      "image": "/images/pano.png",
+      "audio": "/music/Zack Tabudlo - Pano (Lyric Video).mp3"
+    },
+    {
+      "artist": "ROSÉ & Bruno",
+      "title": "APT",
+      "image": "/images/apt.png",
+      "audio": "/music/ROSE & Bruno Mars - APT. (Official Music Video).mp3"
+    },
+    {
+      "artist": "YOUNG&SPRITE ",
+      "title": "Kiminoto",
+      "image": "/images/kiminoto.png",
+      "audio": "/music/SPRITE KIMINOTO Ft. Youngohm (Prod. by Nino & Mosshu) Lyrics [ThaiRomEng].mp3"
+    },
+    {
+      "artist": "Ariana Grande",
+      "title": "Die for you",
+      "image": "/images/dfr.png",
+      "audio": "/music/The Weeknd, Ariana Grande - Die For You (Remix  Lyric Video).mp3"
+    },
+    {
+      "artist": " PARIS",
+      "title": "รักติดไซเรน ",
+      "image": "/images/thai.png",
+      "audio": "/music/PARIS, PEARWAH - รกตดไซเรน (My Ambulance) [Official Lyrics Video].mp3"
+    },
+    {
+      "artist": "Ruth B",
+      "title": "Dandelions",
+      "image": "/images/ruth.png",
+      "audio": "/music/Ruth B. - Dandelions (Lyrics).mp3"
+    }
+ 
+  ]
+}

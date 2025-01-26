@@ -1,24 +1,4 @@
 
-document.addEventListener("DOMContentLoaded", () => {
-    const cardContainers = document.querySelectorAll('.card-artist');
-    const section = document.querySelector('.name-singer');
-    
-    cardContainers.forEach(container => {
-        container.addEventListener('wheel', (event) => {
-            event.preventDefault(); // Prevent vertical scroll
-            container.scrollLeft += event.deltaY * 2; // Adjust speed by changing the multiplier (2)
-            section.addEventListener('wheel', (event) => {
-                event.preventDefault(); // Prevent vertical scroll
-                section.scrollLeft += event.deltaY * 2; // Adjust speed by changing the multiplier (2)
-            });
-            cardSong.addEventListener('wheel', (event) => {
-                event.preventDefault(); // Prevent vertical scroll
-                cardSong.scrollLeft += event.deltaY * 2; // Adjust speed by changing the multiplier (2)
-            });
-        });
-    });
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   fetch("/json/home.json")
     .then((response) => {
@@ -134,6 +114,36 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+const images = [
+  "/images/image1.png",
+  "/images/image2.png",
+  "/images/image3.png",
+];
 
+let currentIndex = 0;
+
+function changeImage() {
+  const imageElement = document.getElementById("changingImage");
+
+  // Slide out to the right and fade out
+  gsap.to(imageElement, {
+      duration: 1,
+      x: 100, // Move 100px to the right
+      opacity: 0,
+      onComplete: () => {
+          // Update the image source after the animation completes
+          currentIndex = (currentIndex + 1) % images.length;
+          imageElement.src = images[currentIndex];
+
+          // Reset position (to the left) and fade back in
+          gsap.set(imageElement, { x: -100 }); // Start from left
+          gsap.to(imageElement, {
+              duration: 1,
+              x: 0, // Slide to original position
+              opacity: 1,
+          });
+      },
+  });
+}
 
 
