@@ -15,7 +15,11 @@ main{
 }
 .Popular h2{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
+}
+.Popular  h3{
+    font-size: 1.6rem;
+    margin-top: 20px;
 }
 .Popular-singer h2{
     text-align: center;
