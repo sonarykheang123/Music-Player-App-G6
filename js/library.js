@@ -1,171 +1,146 @@
-const images = [
-    "/images/image1.png",
-    "/images/image2.png",
-    "/images/image3.png",
-];
-
-let currentIndex = 0;
-
-function changeImage() {
-    const imageElement = document.getElementById("changingImage");
-
-    // Slide out to the right and fade out
-    gsap.to(imageElement, {
-        duration: 1,
-        x: 100, // Move 100px to the right
-        opacity: 0,
-        onComplete: () => {
-            // Update the image source after the animation completes
-            currentIndex = (currentIndex + 1) % images.length;
-            imageElement.src = images[currentIndex];
-
-            // Reset position (to the left) and fade back in
-            gsap.set(imageElement, { x: -100 }); // Start from left
-            gsap.to(imageElement, {
-                duration: 1,
-                x: 0, // Slide to original position
-                opacity: 1,
-            });
-        },
-    });
-}
-
-// Change images every 3 seconds
-setInterval(changeImage, 3000);
-
-
 document.addEventListener("DOMContentLoaded", function () {
     fetch('/json/library.json')
         .then(response => response.json())
         .then(data => {
             const khmerSongsContainer = document.querySelector('.khmer-container');
             const foreignSongsContainer = document.querySelector('.foreign-container');
+            const playerCard = document.getElementById("player-card");
+            const audioPlayer = document.getElementById("audio");
+            const songTitle = document.getElementById("song-title");
+            const songArtist = document.getElementById("song-artist");
+            const songImage = document.getElementById("current-image");
+            const playButton = document.createElement("button"); // Creating play button
+            playButton.id = "play-button";
+            playButton.classList.add("control-button");
+            playButton.textContent = "▶️"; // Default to play icon
+            document.querySelector(".player-controls").appendChild(playButton);
+            const progressBar = document.getElementById("progress-bar");
+            const backButton = document.getElementById("back-button");
+            const previousButton = document.getElementById("previous-button");
+            const nextButton = document.getElementById("next-button");
+            const loopButton = document.getElementById("loop-button");
 
-            let currentlyPlaying = null;
+            let currentKhmerSongIndex = -1;
+            let currentForeignSongIndex = -1;
+            let khmerSongsList = [];
+            let foreignSongsList = [];
+            let currentSongList = ''; // Track the current song list (khmer or foreign)
 
-            function createSongCards(songs, container) {
-                songs.forEach(song => {
+            // Create song cards for each category
+            function createSongCards(songs, container, listType) {
+                if (!songs || songs.length === 0) {
+                    container.innerHTML = `<p>No songs available.</p>`;
+                    return;
+                }
+
+                songs.forEach((song, index) => {
                     const card = document.createElement('div');
                     card.classList.add('artist-card');
-
-                    const audioId = `audio-${song.artist.replace(/\s+/g, '').toLowerCase()}`;
                     card.innerHTML = `
                         <img src="${song.image}" alt="${song.artist}">
                         <h3>${song.artist}</h3>
                         <p>${song.plays}</p>
-                        <audio id="${audioId}" src="${song.audio}"></audio>
-                        <button class="play-button" data-audio="${audioId}">Play</button>
-                        <span class="more-icon"> ⋮</span>
-                        <div class="more-options" style="display: none;">
-                            <div class="controls">
-                                <label for="volume-${audioId}">Volume:</label>
-                                <input type="range" id="volume-${audioId}" class="volume-control" min="0" max="1" step="0.1" value="1">
-                                <label for="speed-${audioId}">Speed:</label>
-                                <select id="speed-${audioId}" class="speed-control">
-                                    <option value="0.5">0.5x</option>
-                                    <option value="1" selected>1x</option>
-                                    <option value="1.5">1.5x</option>
-                                    <option value="2">2x</option>
-                                </select>
-                            </div>
-                        </div>
                     `;
 
+                    // Add click listener to play the song based on its list
+                    card.addEventListener("click", function () {
+                        playSong(index, listType);
+                    });
+
                     container.appendChild(card);
-
-                    const volumeControl = document.getElementById(`volume-${audioId}`);
-                    volumeControl.addEventListener('input', (event) => {
-                        const audioElement = document.getElementById(audioId);
-                        audioElement.volume = event.target.value;
-                    });
-
-                    const speedControl = document.getElementById(`speed-${audioId}`);
-                    speedControl.addEventListener('change', (event) => {
-                        const audioElement = document.getElementById(audioId);
-                        audioElement.playbackRate = parseFloat(event.target.value);
-                    });
-
-                    const moreIcon = card.querySelector('.more-icon');
-                    const moreOptions = card.querySelector('.more-options');
-                    moreIcon.addEventListener('click', function () {
-                        // Close any other open dropdowns
-                        const openDropdowns = document.querySelectorAll('.more-options');
-                        openDropdowns.forEach(dropdown => {
-                            if (dropdown !== moreOptions) {
-                                dropdown.style.display = 'none';
-                            }
-                        });
-                        // Toggle current dropdown
-                        moreOptions.style.display = (moreOptions.style.display === 'none' || moreOptions.style.display === '') ? 'block' : 'none';
-                    });
                 });
+
+                if (listType === 'khmer') {
+                    khmerSongsList = songs; // Store Khmer songs in the list
+                } else if (listType === 'foreign') {
+                    foreignSongsList = songs; // Store Foreign songs in the list
+                }
             }
 
-            // Function to handle hiding the dropdown when clicking outside
-            document.addEventListener('click', function (event) {
-                const moreOptions = document.querySelectorAll('.more-options');
-                moreOptions.forEach(dropdown => {
-                    if (!dropdown.contains(event.target) && !event.target.classList.contains('more-icon')) {
-                        dropdown.style.display = 'none';
-                    }
-                });
+            // Create cards for both Khmer and Foreign songs
+            createSongCards(data.khmerSongs, khmerSongsContainer, 'khmer');
+            createSongCards(data.foreignSongs, foreignSongsContainer, 'foreign');
 
-                // Handle play button clicks
-                if (event.target.classList.contains('play-button')) {
-                    const button = event.target;
-                    const audioId = button.getAttribute('data-audio');
-                    const audioElement = document.getElementById(audioId);
+            // Play the selected song
+            function playSong(index, listType) {
+                let song;
+                if (listType === 'khmer' && khmerSongsList.length > 0) {
+                    song = khmerSongsList[index];
+                    currentKhmerSongIndex = index; // Update current Khmer song index
+                    currentSongList = 'khmer'; // Set current song list to khmer
+                } else if (listType === 'foreign' && foreignSongsList.length > 0) {
+                    song = foreignSongsList[index];
+                    currentForeignSongIndex = index; // Update current Foreign song index
+                    currentSongList = 'foreign'; // Set current song list to foreign
+                }
 
-                    if (currentlyPlaying && currentlyPlaying !== audioElement) {
-                        currentlyPlaying.pause();
-                        const currentButton = document.querySelector(`[data-audio='${currentlyPlaying.id}']`);
-                        currentButton.textContent = 'Play'; // Reset the previous button text to 'Play'
-                    }
+                if (song && song.audio) {
+                    audioPlayer.src = song.audio;
+                    audioPlayer.play();
+                    playButton.textContent = '⏸️';
+                }
 
-                    if (audioElement.paused) {
-                        audioElement.play();
-                        button.textContent = 'Pause';
-                    } else {
-                        audioElement.pause();
-                        button.textContent = 'Play';
-                    }
+                songTitle.textContent = song.title || "Unknown Title";
+                songArtist.textContent = song.artist || "Unknown Artist";
+                songImage.src = song.image || "";
 
-                    currentlyPlaying = audioElement.paused ? null : audioElement;
+                playerCard.style.display = "block";
+                document.body.classList.add("no-scroll");
+                khmerSongsContainer.style.display = "none";
+                foreignSongsContainer.style.display = "none";
+            }
+
+            // Back button functionality
+            backButton.addEventListener("click", () => {
+                playerCard.style.display = "none";
+                document.body.classList.remove("no-scroll");
+                khmerSongsContainer.style.display = "grid";
+                foreignSongsContainer.style.display = "grid";
+                audioPlayer.pause();
+                playButton.textContent = '▶️';
+            });
+
+            // Previous button functionality (to play previous song)
+            previousButton.addEventListener("click", () => {
+                if (currentSongList === 'khmer' && khmerSongsList.length > 0) {
+                    const previousIndex = (currentKhmerSongIndex - 1 + khmerSongsList.length) % khmerSongsList.length;
+                    playSong(previousIndex, 'khmer');
+                } else if (currentSongList === 'foreign' && foreignSongsList.length > 0) {
+                    const previousIndex = (currentForeignSongIndex - 1 + foreignSongsList.length) % foreignSongsList.length;
+                    playSong(previousIndex, 'foreign');
                 }
             });
 
-            // Populate song cards for both Khmer and Foreign songs
-            createSongCards(data.khmerSongs, khmerSongsContainer);
-            createSongCards(data.foreignSongs, foreignSongsContainer);
+            // Next button functionality (to play next song)
+            nextButton.addEventListener("click", () => {
+                if (currentSongList === 'khmer' && khmerSongsList.length > 0) {
+                    const nextIndex = (currentKhmerSongIndex + 1) % khmerSongsList.length;
+                    playSong(nextIndex, 'khmer');
+                } else if (currentSongList === 'foreign' && foreignSongsList.length > 0) {
+                    const nextIndex = (currentForeignSongIndex + 1) % foreignSongsList.length;
+                    playSong(nextIndex, 'foreign');
+                }
+            });
+
+            // Loop button functionality
+            loopButton.addEventListener("click", () => {
+                audioPlayer.loop = !audioPlayer.loop;
+                loopButton.style.color = audioPlayer.loop ? 'green' : 'white';
+                loopButton.textContent = audioPlayer.loop ? '🔁' : '↻';
+            });
+
+            // Progress bar functionality
+            audioPlayer.addEventListener("timeupdate", () => {
+                if (!isNaN(audioPlayer.duration)) {
+                    progressBar.value = (audioPlayer.currentTime / audioPlayer.duration) * 100;
+                }
+            });
+
+            progressBar.addEventListener("input", () => {
+                if (!isNaN(audioPlayer.duration)) {
+                    audioPlayer.currentTime = (progressBar.value / 100) * audioPlayer.duration;
+                }
+            });
         })
         .catch(error => console.error('Error loading JSON:', error));
 });
-// Next song function
-
-function nextSong(currentAudioId) {
-    const currentAudio = document.getElementById(currentAudioId);
-    const card = currentAudio.closest('.artist-card');
-    const nextCard = card.nextElementSibling; // Get the next card
-
-    if (nextCard) {
-        const nextAudioElement = nextCard.querySelector('audio'); // Get the next audio element
-        const nextPlayButton = nextCard.querySelector('.play-button');
-
-        // Stop and reset the current song
-        if (currentlyPlaying) {
-            currentlyPlaying.pause();
-            currentlyPlaying.currentTime = 0; // Reset time to beginning
-            const currentButton = document.querySelector(`[data-audio='${currentlyPlaying.id}']`);
-            if (currentButton) currentButton.textContent = 'Play'; // Reset button text
-        }
-
-        // Play the next song
-        nextAudioElement.play();
-        nextPlayButton.textContent = 'Pause'; // Update button text
-
-        // Update the currently playing song
-        currentlyPlaying = nextAudioElement;
-    } else {
-        alert("This is the last song.");
-    }
-}
