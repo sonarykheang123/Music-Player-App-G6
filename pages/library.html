@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
+
     <script src="/js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5TwH9vkuEKNfS5xg1sD+3h6P9l+1jAP7PjA5Fh5OzX6X1z0xq" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/library.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=logout" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktGqcGNIe9SkGZfv1Tjt4UwtF5iomtvLOt4HI+7K8" crossorigin="anonymous">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktGqcGNIe9SkGZfv1Tjt4UwtF5iomtvLOt4HI+7K8" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,7 +49,7 @@
             </div>
         </div>
 
-        <!-- Sidebar -->
+        <!-- Sidebar start -->
         <aside class="sidebar">
             <div class="sidebar_logo">
                 <img src="../images/logo.jpg" alt="Music Logo">
@@ -49,67 +57,98 @@
             <nav>
                 <ul class="sidebar_menu">
                     <li><a href="../index.html">HOME</a></li>
-                    <li><a href="#">LIBRARY</a></li>
+                    <li><a href="#" class="active">LIBRARY</a></li>
                     <li><a href="/pages/artist.html">ARTIST</a></li>
                     <li><a href="/pages/help.html">HELP</a></li>
                     <li><a href="/pages/setting.html">SETTINGS</a></li>
                 </ul>
             </nav>
-            <button class="sidebar_button"> <a href="/pages/logout.html">LOG OUT</a><span class="material-symbols-outlined">logout</span>
+            
+            <button class="sidebar_button">
+                <a href="/pages/logout.html">LOG OUT</a>
+                <span class="material-symbols-outlined">logout</span>
             </button>
         </aside>
-        <div class="banner">
-            <img src="/images/image1.png" alt="Image 1" id="changingImage">
-        </div>
-        <!-- Song Sections -->
-        <div class="khmer-songs">
-            <div class="title">
-                <h1>Khmer Songs</h1>
-            </div>
-            <div class="khmer-container"></div> <!-- Container for Khmer Songs -->
-        </div>
-    
-        <div class="title1">
-            <h1>International Songs</h1>
-        </div>
-        <div class="foreign-container"></div> <!-- Container for Foreign Songs -->
-     
-     <!-- Footer -->
-    <footer class="bg-dark text-white pt-4">
-        <div class="container">
-            <div class="row">
-                <!-- Brand Section -->
-                <div class="col-md-4 mb-4">
-                    <img src="/images/logo.jpg" alt="">
-                    <h5>SVM music player</h5>
-                    <p>Music is the universal language that connects hearts around the world. <br> The guitar strings sang a melody that told a thousand stories.</p>
-                </div>
-                <!-- Navigation Links -->
-                <div class="col-md-4mb-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Library</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Help</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Setting</a></li>
-                    </ul>
-                </div>
-                <!-- Social Media -->
-                <div class="col-md-4-mb-4">
-                    <h5>Follow Us</h5>
-                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="text-center py-3">
-                <p class="mb-0">&copy; 2025 SVM Music Player. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-    <script src="/js/library.js"></script>
+        <!-- Sidebar end -->
 
+        <div class="main-library">
+        <!-- Banner Section -->
+        <div class="discription">
+            <h1 >WELCOME TO OUR     <br> LIBRARY  </h1>
+        </div>
+
+        <!-- Song Sections -->
+        <div class="container">
+            <div class="khmer-songs">
+                <div class="title">
+                    <h1>Khmer Songs</h1>
+                </div>
+                <div class="khmer-container"></div> <!-- Container for Khmer Songs -->
+            </div>
+
+            <div class="title1">
+                <h1>International Songs</h1>
+            </div>
+
+            <div class="foreign-container"></div> <!-- Container for Foreign Songs -->
+        </div>
+    </div>
+        <!-- Player Card -->
+        <div id="player-card">
+            <div class="card-music">
+                <img id="current-image" src="" alt="Current Song">
+                <h2 id="song-title"></h2>
+                <h3 id="song-artist"></h3>
+                <audio id="audio" controls></audio>
+                <div class="player-controls">
+                    <button class="control-button" id="previous-button">⏮️</button>
+                    <button class="loop-button" id="loop-button">🔁</button>
+                    <button class="control-button" id="next-button">⏭️</button>
+                </div>
+                <input type="range" id="progress-bar" value="0">
+                <button id="back-button">Back</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white pt-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Brand Section -->
+                    <div class="col-md-4 mb-4">
+                        <img src="/images/logo.jpg" alt="">
+                        <h5>SVM Music Player</h5>
+                        <p>Music is the universal language that connects hearts around the world. <br>
+                            The guitar strings sang a melody that told a thousand stories.</p>
+                    </div>
+                    <!-- Navigation Links -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Library</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Help</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Setting</a></li>
+                        </ul>
+                    </div>
+                    <!-- Social Media -->
+                    <div class="col-md-4 mb-4">
+                        <h5>Follow Us</h5>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="text-center py-3">
+                    <p class="mb-0">&copy; 2025 SVM Music Player. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="/js/library.js"></script>
 </body>
 
 </html>

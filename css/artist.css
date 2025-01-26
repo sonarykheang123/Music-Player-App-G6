@@ -19,7 +19,6 @@ main{
 }
 .Popular-singer h2{
     text-align: center;
- 
     margin-top: 50px;
 }
 .name img {
@@ -73,7 +72,6 @@ main{
 .grid-item:hover {
     transform: scale(1.05);
 }
-
 
 
 

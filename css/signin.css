@@ -7,27 +7,39 @@
 
      /* Body Styling */
      body {
-         background-color: #121212;
-         color: #fff;
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 100vh;
-         margin: 0;
-         overflow: hidden;
-         background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
-     }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(to bottom right, #121212, #1e1e1e);
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Subtle blurred background effect */
+    body::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('/images/coming.png') center/cover no-repeat;
+        filter: blur(4px);
+        opacity: 0.4;
+        z-index: -2;
+    }
+    
 
      /* Container Styling */
-     .login-container {
-         width: 400px;
-         padding: 20px;
-         background: #222;
+     .signin-container {
+         width: 420px;
+         padding: 40px;
          border-radius: 15px;
-         box-shadow: 0 4px 40px rgba(0, 0, 0, 0.7);
+         background: rgba(0, 0, 0, 0.582);
          text-align: center;
          animation: slideIn 0.6s ease-out;
+         height: 100vh;
      }
 
      /* Logo Styling */
@@ -85,11 +97,20 @@
 
      /* Icon Styling */
      .icon {
-         margin-right: 12px;
+      
          width: 20px;
          height: 20px;
      }
-
+     .icon1{
+        margin-right: 34px;
+    }
+     .icon2{
+        margin-right: 20px;
+    }
+     .icon3{
+        margin-right: 42px;
+    }
+   
      /* Input Fields */
      .input-field {
          width: 100%;
@@ -104,9 +125,10 @@
      }
 
      .input-field:focus {
-         border-color: rgb(101, 156, 228);
-         outline: none;
-     }
+        border-color: rgb(101, 156, 228);
+        outline: none;
+        box-shadow: 0 0 10px rgba(101, 156, 228, 0.5);
+    }
 
      /* Divider Styling */
      .divider {
