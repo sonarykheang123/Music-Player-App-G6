@@ -1,4 +1,13 @@
 /* Main Section */
+.banner img {
+    width: 80.9%;
+    margin-left: 290px;
+    height: 60vh;
+    position: static;
+  }
+#changingImage{
+   margin-top: 70px;
+}
 main {
     width: 100%;
     position: static;
@@ -84,11 +93,6 @@ h1 {
     gap: 7px;
 }
 
-.binner img {
-    width: 100%;
-    margin-left: 290px;
-    height: 60vh;
-  }
   
 
 @media (max-width: 768px){
@@ -96,8 +100,8 @@ h1 {
         width: 180px;
         height: 180px;
     }
-    .sisebar{
-        width: 150px;
+    .sidebar{
+        height: 100%;
     }
     .search input {
         width: 180px;
@@ -127,6 +131,9 @@ h1 {
 
 }
 @media (max-width: 480px){
+    .banner img{
+        display: none;
+    }
     .sidebar_logo img {
         width: 90px;
         height: 90px;
@@ -143,7 +150,7 @@ h1 {
     .search input {
         width: 100px;
         height: 10%;
-        margin-left: 100px;
+        margin-left: 130px;
     }
 
     .sidebar_menu {

@@ -1,3 +1,39 @@
+const images = [
+  "./images/image1.png", // First image
+  "./images/image2.png", // Second image
+  "./images/image3.png"  // Third image
+];
+
+let currentIndex = 0;
+
+// Function to change the image
+function changeImage() {
+  const imgElement = document.getElementById("changingImage");
+
+  // Fade out the current image
+  gsap.to(imgElement, {
+    duration: 1,
+    opacity: 0,
+    onComplete: () => {
+      // Update the image source
+      currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+      imgElement.src = images[currentIndex];
+
+      // Ensure the image is loaded before fading in
+      imgElement.onload = () => {
+        // Fade in the new image
+        gsap.to(imgElement, { duration: 1, opacity: 1 });
+      };
+    }
+  });
+}
+
+// Change the image every 3 seconds
+setInterval(changeImage, 3000);
+
+// Trigger the first image change immediately
+changeImage();
+
 
 document.addEventListener("DOMContentLoaded", function () {
   fetch("/json/home.json")
@@ -114,36 +150,5 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-const images = [
-  "/images/image1.png",
-  "/images/image2.png",
-  "/images/image3.png",
-];
 
-let currentIndex = 0;
-
-function changeImage() {
-  const imageElement = document.getElementById("changingImage");
-
-  // Slide out to the right and fade out
-  gsap.to(imageElement, {
-      duration: 1,
-      x: 100, // Move 100px to the right
-      opacity: 0,
-      onComplete: () => {
-          // Update the image source after the animation completes
-          currentIndex = (currentIndex + 1) % images.length;
-          imageElement.src = images[currentIndex];
-
-          // Reset position (to the left) and fade back in
-          gsap.set(imageElement, { x: -100 }); // Start from left
-          gsap.to(imageElement, {
-              duration: 1,
-              x: 0, // Slide to original position
-              opacity: 1,
-          });
-      },
-  });
-}
-
-
+   
