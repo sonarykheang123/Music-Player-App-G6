@@ -1,26 +1,40 @@
+<<<<<<< HEAD
 .container-artist{
     width: 80.9%;
+=======
+.container-artist {
+    width: 81%;
+>>>>>>> artist
     margin-left: 290px;
     height: 60vh;
     background-image: url(https://www.thefragrancecounter.co.uk/user/news/thumbnails/billieeilishwebannerblog.jpg);
     background-size: cover;
-    
+
 }
+
 /* Name Singer Section */
-main{
+main {
     width: 80%;
     margin-left: 298px;
     padding-top: 30px;
-    
+
 }
-.Popular h2{
+
+.Popular h2 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
-.Popular-singer h2{
+
+.Popular h3 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+.Popular-singer h2 {
     text-align: center;
     margin-top: 50px;
 }
+
 .name img {
     width: 150px;
     height: 150px;
@@ -29,6 +43,7 @@ main{
     margin-right: 8px;
     display: flex;
 }
+
 /* Singer Name Section */
 .name-singer {
     display: flex;
@@ -36,6 +51,7 @@ main{
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .name-singers {
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +59,7 @@ main{
     margin-top: 60px;
     margin-left: 10px;
 }
+
 .nameSingers {
     margin-top: 8px;
     font-weight: bold;
@@ -74,5 +91,113 @@ main{
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
 
+    /* Adjust grid layout for medium devices */
+    main {
+        width: 70%;
+        margin-left: 270px;
+        padding-top: 30px;
+    }
 
+    .search input {
+        width: 200px;
+        height: 20px;
+        margin-left: 220px;
+    }
+
+    .sidebar_logo img {
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 200px;
+    }
+
+    .sidebar_menu {
+        font-size: 24px;
+        margin-top: 70px;
+    }
+
+    .Popular {
+        margin-top: 150px;
+        margin-left: 10px;
+        height: auto;
+    }
+
+    .name-singers {
+        width: 400px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .lastsinger {
+        margin-left: 300px;
+    }
+
+    .container-artist {
+        display: none;
+    }
+
+    .Popular-singer {
+        margin-top: 100px;
+        width: 100px;
+        margin-bottom: 50px;
+    }
+
+    .Popular-singer {
+        margin-left: -10px;
+        width: 500px;
+    }
+}
+@media (max-width: 767px){
+    .sidebar_logo img {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    }
+
+    .sidebar {
+        width: 110px;
+        height: 100%;
+    }
+
+    .search input {
+        width: 200px;
+        height: 10%;
+        margin-left: 186px;
+    }
+
+    .sidebar_menu {
+        margin-top: 40px;
+    }
+
+    .sidebar_button {
+        font-size: 11px;
+        padding: 8px 15px;
+    }
+
+    nav ul #Log,
+    #Sign {
+        display: none;
+    }
+    .container-artist{
+        display: none;
+    }
+    main {
+        width: 50%;
+        margin-left: 200px;
+        padding-top: 30px;
+    }
+    .Popular h2{
+        font-size: 1.7rem;
+        margin-top: 100px;
+    }
+    .Popular h3{
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+}
